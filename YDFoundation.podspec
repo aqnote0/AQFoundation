@@ -3,8 +3,8 @@ Pod::Spec.new do |s|
 
   s.name                  = "YDFoundation"
   s.version               = "1.0.0-beta1"
-  s.summary               = "provider dev foundation api."
-  s.description           = "YD Foundation Framework"
+  s.summary               = "provider foundation api."
+  s.description           = "YD Foundation Framework, Provider JSON, Base64, Log etc..."
   s.homepage              = "https://github.com/imadding/YDFoundation"
   s.license               = { :type => 'Copyright', :text => "Apache License" }
   s.author                = { "madding.lip" => "madding.lip@gmail.com" }
