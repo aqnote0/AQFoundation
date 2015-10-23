@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A2FF12C1BDA1AF800A95C25 /* YDFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2FF1211BDA1AF700A95C25 /* YDFoundation.framework */; settings = {ASSET_TAGS = (); }; };
+		9A2FF1311BDA1AF800A95C25 /* YDFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF1301BDA1AF800A95C25 /* YDFoundationTests.m */; };
+		9A2FF2471BDA1BFB00A95C25 /* YDFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF1F51BDA1BFB00A95C25 /* YDFileCache.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2491BDA1BFB00A95C25 /* YDMemCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF1F71BDA1BFB00A95C25 /* YDMemCache.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF24B1BDA1BFB00A95C25 /* YDUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF1F91BDA1BFB00A95C25 /* YDUserDefaults.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF24C1BDA1BFB00A95C25 /* YDBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF1FB1BDA1BFB00A95C25 /* YDBase64.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF24D1BDA1BFB00A95C25 /* YDBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF1FC1BDA1BFB00A95C25 /* YDBundle.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF24E1BDA1BFB00A95C25 /* YDClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF1FD1BDA1BFB00A95C25 /* YDClass.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF24F1BDA1BFB00A95C25 /* YDDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF1FE1BDA1BFB00A95C25 /* YDDate.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2501BDA1BFB00A95C25 /* YDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF1FF1BDA1BFB00A95C25 /* YDDevice.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2511BDA1BFB00A95C25 /* YDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2001BDA1BFB00A95C25 /* YDExtension.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2521BDA1BFB00A95C25 /* YDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2011BDA1BFB00A95C25 /* YDExtension.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2541BDA1BFB00A95C25 /* YDJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2031BDA1BFB00A95C25 /* YDJSON.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2551BDA1BFB00A95C25 /* YDNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2041BDA1BFB00A95C25 /* YDNotification.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2561BDA1BFB00A95C25 /* YDNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2051BDA1BFB00A95C25 /* YDNotification.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2571BDA1BFB00A95C25 /* YDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2061BDA1BFB00A95C25 /* YDNumber.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2581BDA1BFB00A95C25 /* YDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2071BDA1BFB00A95C25 /* YDObject.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2591BDA1BFB00A95C25 /* YDOpQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2081BDA1BFB00A95C25 /* YDOpQueue.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF25A1BDA1BFB00A95C25 /* YDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2091BDA1BFB00A95C25 /* YDQueue.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF25B1BDA1BFB00A95C25 /* YDRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF20A1BDA1BFB00A95C25 /* YDRandom.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF25C1BDA1BFB00A95C25 /* YDRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF20B1BDA1BFB00A95C25 /* YDRSA.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF25D1BDA1BFB00A95C25 /* YDSandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF20C1BDA1BFB00A95C25 /* YDSandbox.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF25E1BDA1BFB00A95C25 /* YDStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF20D1BDA1BFB00A95C25 /* YDStack.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF25F1BDA1BFB00A95C25 /* YDStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF20E1BDA1BFB00A95C25 /* YDStack.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2601BDA1BFB00A95C25 /* YDString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF20F1BDA1BFB00A95C25 /* YDString.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2611BDA1BFB00A95C25 /* YDThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2101BDA1BFB00A95C25 /* YDThread.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2621BDA1BFB00A95C25 /* YDTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2111BDA1BFB00A95C25 /* YDTree.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2631BDA1BFB00A95C25 /* YDTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2121BDA1BFB00A95C25 /* YDTree.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2641BDA1BFB00A95C25 /* YDURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2131BDA1BFB00A95C25 /* YDURL.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2671BDA1BFB00A95C25 /* YDLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2171BDA1BFB00A95C25 /* YDLogger.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF27D1BDA1BFB00A95C25 /* YDRTClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2301BDA1BFB00A95C25 /* YDRTClass.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF27F1BDA1BFB00A95C25 /* YDRTIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2321BDA1BFB00A95C25 /* YDRTIvar.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2811BDA1BFB00A95C25 /* YDRTMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2341BDA1BFB00A95C25 /* YDRTMethod.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2831BDA1BFB00A95C25 /* YDRTProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2361BDA1BFB00A95C25 /* YDRTProperty.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2851BDA1BFB00A95C25 /* YDRTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2381BDA1BFB00A95C25 /* YDRTProtocol.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2871BDA1BFB00A95C25 /* YDRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF23A1BDA1BFB00A95C25 /* YDRuntime.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2881BDA1BFB00A95C25 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF23D1BDA1BFB00A95C25 /* MBProgressHUD.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2891BDA1BFB00A95C25 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF23E1BDA1BFB00A95C25 /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF28A1BDA1BFB00A95C25 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2401BDA1BFB00A95C25 /* Reachability.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF28B1BDA1BFB00A95C25 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF2411BDA1BFB00A95C25 /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2B21BDA21EE00A95C25 /* YDCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2901BDA21EE00A95C25 /* YDCache.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2B31BDA21EE00A95C25 /* YDCacheProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2911BDA21EE00A95C25 /* YDCacheProtocol.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2B41BDA21EE00A95C25 /* YDFileCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2921BDA21EE00A95C25 /* YDFileCache.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2B51BDA21EE00A95C25 /* YDMemCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2931BDA21EE00A95C25 /* YDMemCache.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2B61BDA21EE00A95C25 /* YDUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2941BDA21EE00A95C25 /* YDUserDefaults.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2B71BDA21EE00A95C25 /* YDBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2961BDA21EE00A95C25 /* YDBase64.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2B81BDA21EE00A95C25 /* YDBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2971BDA21EE00A95C25 /* YDBundle.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2B91BDA21EE00A95C25 /* YDClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2981BDA21EE00A95C25 /* YDClass.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2BA1BDA21EE00A95C25 /* YDDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2991BDA21EE00A95C25 /* YDDate.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2BB1BDA21EE00A95C25 /* YDDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF29A1BDA21EE00A95C25 /* YDDevice.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2BC1BDA21EE00A95C25 /* YDJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF29B1BDA21EE00A95C25 /* YDJSON.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2BD1BDA21EE00A95C25 /* YDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF29C1BDA21EE00A95C25 /* YDNumber.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2BE1BDA21EE00A95C25 /* YDObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF29D1BDA21EE00A95C25 /* YDObject.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2BF1BDA21EE00A95C25 /* YDOpQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF29E1BDA21EE00A95C25 /* YDOpQueue.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2C01BDA21EE00A95C25 /* YDQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF29F1BDA21EE00A95C25 /* YDQueue.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2C11BDA21EE00A95C25 /* YDRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2A01BDA21EE00A95C25 /* YDRandom.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2C21BDA21EE00A95C25 /* YDRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2A11BDA21EE00A95C25 /* YDRSA.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2C31BDA21EE00A95C25 /* YDSandbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2A21BDA21EE00A95C25 /* YDSandbox.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2C41BDA21EE00A95C25 /* YDSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2A31BDA21EE00A95C25 /* YDSingleton.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2C51BDA21EE00A95C25 /* YDString.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2A41BDA21EE00A95C25 /* YDString.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2C61BDA21EE00A95C25 /* YDThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2A51BDA21EE00A95C25 /* YDThread.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2C71BDA21EE00A95C25 /* YDURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2A61BDA21EE00A95C25 /* YDURL.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2C81BDA21EE00A95C25 /* YDCompile.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2A81BDA21EE00A95C25 /* YDCompile.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2C91BDA21EE00A95C25 /* YDLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2A91BDA21EE00A95C25 /* YDLogger.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2CB1BDA21EE00A95C25 /* YDRTClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2AC1BDA21EE00A95C25 /* YDRTClass.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2CC1BDA21EE00A95C25 /* YDRTIvar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2AD1BDA21EE00A95C25 /* YDRTIvar.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2CD1BDA21EE00A95C25 /* YDRTMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2AE1BDA21EE00A95C25 /* YDRTMethod.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2CE1BDA21EE00A95C25 /* YDRTProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2AF1BDA21EE00A95C25 /* YDRTProperty.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2CF1BDA21EE00A95C25 /* YDRTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2B01BDA21EE00A95C25 /* YDRTProtocol.h */; settings = {ASSET_TAGS = (); }; };
+		9A2FF2D01BDA21EE00A95C25 /* YDRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2FF2B11BDA21EE00A95C25 /* YDRuntime.h */; settings = {ASSET_TAGS = (); }; };
+		9A66C4531BDA2CD800D28549 /* YDFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66C4521BDA2CD800D28549 /* YDFoundation.h */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A2FF12D1BDA1AF800A95C25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A2FF1181BDA1AF700A95C25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A2FF1201BDA1AF700A95C25;
+			remoteInfo = YDFoundation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A2FF1211BDA1AF700A95C25 /* YDFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YDFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2FF12B1BDA1AF800A95C25 /* YDFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YDFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2FF1301BDA1AF800A95C25 /* YDFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDFoundationTests.m; sourceTree = "<group>"; };
+		9A2FF1321BDA1AF800A95C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2FF1971BDA1B8100A95C25 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2FF1F51BDA1BFB00A95C25 /* YDFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDFileCache.m; sourceTree = "<group>"; };
+		9A2FF1F71BDA1BFB00A95C25 /* YDMemCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMemCache.m; sourceTree = "<group>"; };
+		9A2FF1F91BDA1BFB00A95C25 /* YDUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDUserDefaults.m; sourceTree = "<group>"; };
+		9A2FF1FB1BDA1BFB00A95C25 /* YDBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBase64.m; sourceTree = "<group>"; };
+		9A2FF1FC1BDA1BFB00A95C25 /* YDBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBundle.m; sourceTree = "<group>"; };
+		9A2FF1FD1BDA1BFB00A95C25 /* YDClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDClass.m; sourceTree = "<group>"; };
+		9A2FF1FE1BDA1BFB00A95C25 /* YDDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDDate.m; sourceTree = "<group>"; };
+		9A2FF1FF1BDA1BFB00A95C25 /* YDDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDDevice.m; sourceTree = "<group>"; };
+		9A2FF2001BDA1BFB00A95C25 /* YDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDExtension.h; sourceTree = "<group>"; };
+		9A2FF2011BDA1BFB00A95C25 /* YDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDExtension.m; sourceTree = "<group>"; };
+		9A2FF2031BDA1BFB00A95C25 /* YDJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDJSON.m; sourceTree = "<group>"; };
+		9A2FF2041BDA1BFB00A95C25 /* YDNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNotification.h; sourceTree = "<group>"; };
+		9A2FF2051BDA1BFB00A95C25 /* YDNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNotification.m; sourceTree = "<group>"; };
+		9A2FF2061BDA1BFB00A95C25 /* YDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNumber.m; sourceTree = "<group>"; };
+		9A2FF2071BDA1BFB00A95C25 /* YDObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDObject.m; sourceTree = "<group>"; };
+		9A2FF2081BDA1BFB00A95C25 /* YDOpQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpQueue.m; sourceTree = "<group>"; };
+		9A2FF2091BDA1BFB00A95C25 /* YDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQueue.m; sourceTree = "<group>"; };
+		9A2FF20A1BDA1BFB00A95C25 /* YDRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRandom.m; sourceTree = "<group>"; };
+		9A2FF20B1BDA1BFB00A95C25 /* YDRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRSA.m; sourceTree = "<group>"; };
+		9A2FF20C1BDA1BFB00A95C25 /* YDSandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSandbox.m; sourceTree = "<group>"; };
+		9A2FF20D1BDA1BFB00A95C25 /* YDStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDStack.h; sourceTree = "<group>"; };
+		9A2FF20E1BDA1BFB00A95C25 /* YDStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDStack.m; sourceTree = "<group>"; };
+		9A2FF20F1BDA1BFB00A95C25 /* YDString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDString.m; sourceTree = "<group>"; };
+		9A2FF2101BDA1BFB00A95C25 /* YDThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDThread.m; sourceTree = "<group>"; };
+		9A2FF2111BDA1BFB00A95C25 /* YDTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTree.h; sourceTree = "<group>"; };
+		9A2FF2121BDA1BFB00A95C25 /* YDTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTree.m; sourceTree = "<group>"; };
+		9A2FF2131BDA1BFB00A95C25 /* YDURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDURL.m; sourceTree = "<group>"; };
+		9A2FF2171BDA1BFB00A95C25 /* YDLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDLogger.m; sourceTree = "<group>"; };
+		9A2FF2301BDA1BFB00A95C25 /* YDRTClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRTClass.m; sourceTree = "<group>"; };
+		9A2FF2321BDA1BFB00A95C25 /* YDRTIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRTIvar.m; sourceTree = "<group>"; };
+		9A2FF2341BDA1BFB00A95C25 /* YDRTMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRTMethod.m; sourceTree = "<group>"; };
+		9A2FF2361BDA1BFB00A95C25 /* YDRTProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRTProperty.m; sourceTree = "<group>"; };
+		9A2FF2381BDA1BFB00A95C25 /* YDRTProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRTProtocol.m; sourceTree = "<group>"; };
+		9A2FF23A1BDA1BFB00A95C25 /* YDRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRuntime.m; sourceTree = "<group>"; };
+		9A2FF23D1BDA1BFB00A95C25 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9A2FF23E1BDA1BFB00A95C25 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9A2FF2401BDA1BFB00A95C25 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		9A2FF2411BDA1BFB00A95C25 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		9A2FF2901BDA21EE00A95C25 /* YDCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCache.h; sourceTree = "<group>"; };
+		9A2FF2911BDA21EE00A95C25 /* YDCacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCacheProtocol.h; sourceTree = "<group>"; };
+		9A2FF2921BDA21EE00A95C25 /* YDFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFileCache.h; sourceTree = "<group>"; };
+		9A2FF2931BDA21EE00A95C25 /* YDMemCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMemCache.h; sourceTree = "<group>"; };
+		9A2FF2941BDA21EE00A95C25 /* YDUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUserDefaults.h; sourceTree = "<group>"; };
+		9A2FF2961BDA21EE00A95C25 /* YDBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBase64.h; sourceTree = "<group>"; };
+		9A2FF2971BDA21EE00A95C25 /* YDBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBundle.h; sourceTree = "<group>"; };
+		9A2FF2981BDA21EE00A95C25 /* YDClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDClass.h; sourceTree = "<group>"; };
+		9A2FF2991BDA21EE00A95C25 /* YDDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDDate.h; sourceTree = "<group>"; };
+		9A2FF29A1BDA21EE00A95C25 /* YDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDDevice.h; sourceTree = "<group>"; };
+		9A2FF29B1BDA21EE00A95C25 /* YDJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDJSON.h; sourceTree = "<group>"; };
+		9A2FF29C1BDA21EE00A95C25 /* YDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNumber.h; sourceTree = "<group>"; };
+		9A2FF29D1BDA21EE00A95C25 /* YDObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDObject.h; sourceTree = "<group>"; };
+		9A2FF29E1BDA21EE00A95C25 /* YDOpQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpQueue.h; sourceTree = "<group>"; };
+		9A2FF29F1BDA21EE00A95C25 /* YDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQueue.h; sourceTree = "<group>"; };
+		9A2FF2A01BDA21EE00A95C25 /* YDRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRandom.h; sourceTree = "<group>"; };
+		9A2FF2A11BDA21EE00A95C25 /* YDRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRSA.h; sourceTree = "<group>"; };
+		9A2FF2A21BDA21EE00A95C25 /* YDSandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSandbox.h; sourceTree = "<group>"; };
+		9A2FF2A31BDA21EE00A95C25 /* YDSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSingleton.h; sourceTree = "<group>"; };
+		9A2FF2A41BDA21EE00A95C25 /* YDString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDString.h; sourceTree = "<group>"; };
+		9A2FF2A51BDA21EE00A95C25 /* YDThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDThread.h; sourceTree = "<group>"; };
+		9A2FF2A61BDA21EE00A95C25 /* YDURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDURL.h; sourceTree = "<group>"; };
+		9A2FF2A81BDA21EE00A95C25 /* YDCompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCompile.h; sourceTree = "<group>"; };
+		9A2FF2A91BDA21EE00A95C25 /* YDLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDLogger.h; sourceTree = "<group>"; };
+		9A2FF2AC1BDA21EE00A95C25 /* YDRTClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRTClass.h; sourceTree = "<group>"; };
+		9A2FF2AD1BDA21EE00A95C25 /* YDRTIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRTIvar.h; sourceTree = "<group>"; };
+		9A2FF2AE1BDA21EE00A95C25 /* YDRTMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRTMethod.h; sourceTree = "<group>"; };
+		9A2FF2AF1BDA21EE00A95C25 /* YDRTProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRTProperty.h; sourceTree = "<group>"; };
+		9A2FF2B01BDA21EE00A95C25 /* YDRTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRTProtocol.h; sourceTree = "<group>"; };
+		9A2FF2B11BDA21EE00A95C25 /* YDRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRuntime.h; sourceTree = "<group>"; };
+		9A66C4521BDA2CD800D28549 /* YDFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFoundation.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A2FF11D1BDA1AF700A95C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2FF1281BDA1AF800A95C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2FF12C1BDA1AF800A95C25 /* YDFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A2FF1171BDA1AF700A95C25 = {
+			isa = PBXGroup;
+			children = (
+				9A2FF1951BDA1B8100A95C25 /* YDFoundation */,
+				9A2FF12F1BDA1AF800A95C25 /* YDFoundationTests */,
+				9A2FF1221BDA1AF700A95C25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A2FF1221BDA1AF700A95C25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF1211BDA1AF700A95C25 /* YDFoundation.framework */,
+				9A2FF12B1BDA1AF800A95C25 /* YDFoundationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A2FF12F1BDA1AF800A95C25 /* YDFoundationTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF1301BDA1AF800A95C25 /* YDFoundationTests.m */,
+				9A2FF1321BDA1AF800A95C25 /* Info.plist */,
+			);
+			path = YDFoundationTests;
+			sourceTree = "<group>";
+		};
+		9A2FF1951BDA1B8100A95C25 /* YDFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF1961BDA1B8100A95C25 /* Resources */,
+				9A2FF1F01BDA1BFB00A95C25 /* Sources */,
+			);
+			path = YDFoundation;
+			sourceTree = "<group>";
+		};
+		9A2FF1961BDA1B8100A95C25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF1971BDA1B8100A95C25 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9A2FF1F01BDA1BFB00A95C25 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF1F11BDA1BFB00A95C25 /* cache */,
+				9A2FF1FA1BDA1BFB00A95C25 /* foundation */,
+				9A2FF2141BDA1BFB00A95C25 /* log */,
+				9A2FF21B1BDA1BFB00A95C25 /* private */,
+				9A2FF21C1BDA1BFB00A95C25 /* public */,
+				9A2FF22E1BDA1BFB00A95C25 /* runtime */,
+				9A2FF23B1BDA1BFB00A95C25 /* vendor */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9A2FF1F11BDA1BFB00A95C25 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF1F51BDA1BFB00A95C25 /* YDFileCache.m */,
+				9A2FF1F71BDA1BFB00A95C25 /* YDMemCache.m */,
+				9A2FF1F91BDA1BFB00A95C25 /* YDUserDefaults.m */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		9A2FF1FA1BDA1BFB00A95C25 /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF1FB1BDA1BFB00A95C25 /* YDBase64.m */,
+				9A2FF1FC1BDA1BFB00A95C25 /* YDBundle.m */,
+				9A2FF1FD1BDA1BFB00A95C25 /* YDClass.m */,
+				9A2FF1FE1BDA1BFB00A95C25 /* YDDate.m */,
+				9A2FF1FF1BDA1BFB00A95C25 /* YDDevice.m */,
+				9A2FF2001BDA1BFB00A95C25 /* YDExtension.h */,
+				9A2FF2011BDA1BFB00A95C25 /* YDExtension.m */,
+				9A2FF2031BDA1BFB00A95C25 /* YDJSON.m */,
+				9A2FF2041BDA1BFB00A95C25 /* YDNotification.h */,
+				9A2FF2051BDA1BFB00A95C25 /* YDNotification.m */,
+				9A2FF2061BDA1BFB00A95C25 /* YDNumber.m */,
+				9A2FF2071BDA1BFB00A95C25 /* YDObject.m */,
+				9A2FF2081BDA1BFB00A95C25 /* YDOpQueue.m */,
+				9A2FF2091BDA1BFB00A95C25 /* YDQueue.m */,
+				9A2FF20A1BDA1BFB00A95C25 /* YDRandom.m */,
+				9A2FF20B1BDA1BFB00A95C25 /* YDRSA.m */,
+				9A2FF20C1BDA1BFB00A95C25 /* YDSandbox.m */,
+				9A2FF20D1BDA1BFB00A95C25 /* YDStack.h */,
+				9A2FF20E1BDA1BFB00A95C25 /* YDStack.m */,
+				9A2FF20F1BDA1BFB00A95C25 /* YDString.m */,
+				9A2FF2101BDA1BFB00A95C25 /* YDThread.m */,
+				9A2FF2111BDA1BFB00A95C25 /* YDTree.h */,
+				9A2FF2121BDA1BFB00A95C25 /* YDTree.m */,
+				9A2FF2131BDA1BFB00A95C25 /* YDURL.m */,
+			);
+			path = foundation;
+			sourceTree = "<group>";
+		};
+		9A2FF2141BDA1BFB00A95C25 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF2171BDA1BFB00A95C25 /* YDLogger.m */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		9A2FF21B1BDA1BFB00A95C25 /* private */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		9A2FF21C1BDA1BFB00A95C25 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				9A66C4511BDA2CD800D28549 /* bundle */,
+				9A2FF28F1BDA21EE00A95C25 /* cache */,
+				9A2FF2951BDA21EE00A95C25 /* foundation */,
+				9A2FF2A71BDA21EE00A95C25 /* log */,
+				9A2FF2AB1BDA21EE00A95C25 /* runtime */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		9A2FF22E1BDA1BFB00A95C25 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF2301BDA1BFB00A95C25 /* YDRTClass.m */,
+				9A2FF2321BDA1BFB00A95C25 /* YDRTIvar.m */,
+				9A2FF2341BDA1BFB00A95C25 /* YDRTMethod.m */,
+				9A2FF2361BDA1BFB00A95C25 /* YDRTProperty.m */,
+				9A2FF2381BDA1BFB00A95C25 /* YDRTProtocol.m */,
+				9A2FF23A1BDA1BFB00A95C25 /* YDRuntime.m */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		9A2FF23B1BDA1BFB00A95C25 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF23C1BDA1BFB00A95C25 /* hud */,
+				9A2FF23F1BDA1BFB00A95C25 /* reachability */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		9A2FF23C1BDA1BFB00A95C25 /* hud */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF23D1BDA1BFB00A95C25 /* MBProgressHUD.h */,
+				9A2FF23E1BDA1BFB00A95C25 /* MBProgressHUD.m */,
+			);
+			path = hud;
+			sourceTree = "<group>";
+		};
+		9A2FF23F1BDA1BFB00A95C25 /* reachability */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF2401BDA1BFB00A95C25 /* Reachability.h */,
+				9A2FF2411BDA1BFB00A95C25 /* Reachability.m */,
+			);
+			path = reachability;
+			sourceTree = "<group>";
+		};
+		9A2FF28F1BDA21EE00A95C25 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF2901BDA21EE00A95C25 /* YDCache.h */,
+				9A2FF2911BDA21EE00A95C25 /* YDCacheProtocol.h */,
+				9A2FF2921BDA21EE00A95C25 /* YDFileCache.h */,
+				9A2FF2931BDA21EE00A95C25 /* YDMemCache.h */,
+				9A2FF2941BDA21EE00A95C25 /* YDUserDefaults.h */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		9A2FF2951BDA21EE00A95C25 /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF2961BDA21EE00A95C25 /* YDBase64.h */,
+				9A2FF2971BDA21EE00A95C25 /* YDBundle.h */,
+				9A2FF2981BDA21EE00A95C25 /* YDClass.h */,
+				9A2FF2991BDA21EE00A95C25 /* YDDate.h */,
+				9A2FF29A1BDA21EE00A95C25 /* YDDevice.h */,
+				9A2FF29B1BDA21EE00A95C25 /* YDJSON.h */,
+				9A2FF29C1BDA21EE00A95C25 /* YDNumber.h */,
+				9A2FF29D1BDA21EE00A95C25 /* YDObject.h */,
+				9A2FF29E1BDA21EE00A95C25 /* YDOpQueue.h */,
+				9A2FF29F1BDA21EE00A95C25 /* YDQueue.h */,
+				9A2FF2A01BDA21EE00A95C25 /* YDRandom.h */,
+				9A2FF2A11BDA21EE00A95C25 /* YDRSA.h */,
+				9A2FF2A21BDA21EE00A95C25 /* YDSandbox.h */,
+				9A2FF2A31BDA21EE00A95C25 /* YDSingleton.h */,
+				9A2FF2A41BDA21EE00A95C25 /* YDString.h */,
+				9A2FF2A51BDA21EE00A95C25 /* YDThread.h */,
+				9A2FF2A61BDA21EE00A95C25 /* YDURL.h */,
+			);
+			path = foundation;
+			sourceTree = "<group>";
+		};
+		9A2FF2A71BDA21EE00A95C25 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF2A81BDA21EE00A95C25 /* YDCompile.h */,
+				9A2FF2A91BDA21EE00A95C25 /* YDLogger.h */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		9A2FF2AB1BDA21EE00A95C25 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF2AC1BDA21EE00A95C25 /* YDRTClass.h */,
+				9A2FF2AD1BDA21EE00A95C25 /* YDRTIvar.h */,
+				9A2FF2AE1BDA21EE00A95C25 /* YDRTMethod.h */,
+				9A2FF2AF1BDA21EE00A95C25 /* YDRTProperty.h */,
+				9A2FF2B01BDA21EE00A95C25 /* YDRTProtocol.h */,
+				9A2FF2B11BDA21EE00A95C25 /* YDRuntime.h */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		9A66C4511BDA2CD800D28549 /* bundle */ = {
+			isa = PBXGroup;
+			children = (
+				9A66C4521BDA2CD800D28549 /* YDFoundation.h */,
+			);
+			path = bundle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9A2FF11E1BDA1AF700A95C25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2FF2C51BDA21EE00A95C25 /* YDString.h in Headers */,
+				9A2FF2551BDA1BFB00A95C25 /* YDNotification.h in Headers */,
+				9A2FF2C31BDA21EE00A95C25 /* YDSandbox.h in Headers */,
+				9A2FF2BA1BDA21EE00A95C25 /* YDDate.h in Headers */,
+				9A2FF2C01BDA21EE00A95C25 /* YDQueue.h in Headers */,
+				9A2FF2BC1BDA21EE00A95C25 /* YDJSON.h in Headers */,
+				9A2FF2B91BDA21EE00A95C25 /* YDClass.h in Headers */,
+				9A2FF2CB1BDA21EE00A95C25 /* YDRTClass.h in Headers */,
+				9A2FF2CF1BDA21EE00A95C25 /* YDRTProtocol.h in Headers */,
+				9A2FF2C11BDA21EE00A95C25 /* YDRandom.h in Headers */,
+				9A2FF2C81BDA21EE00A95C25 /* YDCompile.h in Headers */,
+				9A2FF2B71BDA21EE00A95C25 /* YDBase64.h in Headers */,
+				9A2FF2CC1BDA21EE00A95C25 /* YDRTIvar.h in Headers */,
+				9A2FF2B81BDA21EE00A95C25 /* YDBundle.h in Headers */,
+				9A2FF2CD1BDA21EE00A95C25 /* YDRTMethod.h in Headers */,
+				9A2FF2B61BDA21EE00A95C25 /* YDUserDefaults.h in Headers */,
+				9A2FF2B31BDA21EE00A95C25 /* YDCacheProtocol.h in Headers */,
+				9A2FF2C41BDA21EE00A95C25 /* YDSingleton.h in Headers */,
+				9A2FF2BB1BDA21EE00A95C25 /* YDDevice.h in Headers */,
+				9A2FF2881BDA1BFB00A95C25 /* MBProgressHUD.h in Headers */,
+				9A66C4531BDA2CD800D28549 /* YDFoundation.h in Headers */,
+				9A2FF2621BDA1BFB00A95C25 /* YDTree.h in Headers */,
+				9A2FF2BE1BDA21EE00A95C25 /* YDObject.h in Headers */,
+				9A2FF2C21BDA21EE00A95C25 /* YDRSA.h in Headers */,
+				9A2FF2B51BDA21EE00A95C25 /* YDMemCache.h in Headers */,
+				9A2FF2B21BDA21EE00A95C25 /* YDCache.h in Headers */,
+				9A2FF2BF1BDA21EE00A95C25 /* YDOpQueue.h in Headers */,
+				9A2FF2C61BDA21EE00A95C25 /* YDThread.h in Headers */,
+				9A2FF2D01BDA21EE00A95C25 /* YDRuntime.h in Headers */,
+				9A2FF25E1BDA1BFB00A95C25 /* YDStack.h in Headers */,
+				9A2FF28A1BDA1BFB00A95C25 /* Reachability.h in Headers */,
+				9A2FF2B41BDA21EE00A95C25 /* YDFileCache.h in Headers */,
+				9A2FF2CE1BDA21EE00A95C25 /* YDRTProperty.h in Headers */,
+				9A2FF2C71BDA21EE00A95C25 /* YDURL.h in Headers */,
+				9A2FF2C91BDA21EE00A95C25 /* YDLogger.h in Headers */,
+				9A2FF2BD1BDA21EE00A95C25 /* YDNumber.h in Headers */,
+				9A2FF2511BDA1BFB00A95C25 /* YDExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9A2FF1201BDA1AF700A95C25 /* YDFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A2FF1351BDA1AF800A95C25 /* Build configuration list for PBXNativeTarget "YDFoundation" */;
+			buildPhases = (
+				9A2FF11C1BDA1AF700A95C25 /* Sources */,
+				9A2FF11D1BDA1AF700A95C25 /* Frameworks */,
+				9A2FF11E1BDA1AF700A95C25 /* Headers */,
+				9A2FF11F1BDA1AF700A95C25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YDFoundation;
+			productName = YDFoundation;
+			productReference = 9A2FF1211BDA1AF700A95C25 /* YDFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9A2FF12A1BDA1AF800A95C25 /* YDFoundationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A2FF1381BDA1AF800A95C25 /* Build configuration list for PBXNativeTarget "YDFoundationTests" */;
+			buildPhases = (
+				9A2FF1271BDA1AF800A95C25 /* Sources */,
+				9A2FF1281BDA1AF800A95C25 /* Frameworks */,
+				9A2FF1291BDA1AF800A95C25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A2FF12E1BDA1AF800A95C25 /* PBXTargetDependency */,
+			);
+			name = YDFoundationTests;
+			productName = YDFoundationTests;
+			productReference = 9A2FF12B1BDA1AF800A95C25 /* YDFoundationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A2FF1181BDA1AF700A95C25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = madding;
+				TargetAttributes = {
+					9A2FF1201BDA1AF700A95C25 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = WE5AVK72GR;
+					};
+					9A2FF12A1BDA1AF800A95C25 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = WE5AVK72GR;
+					};
+				};
+			};
+			buildConfigurationList = 9A2FF11B1BDA1AF700A95C25 /* Build configuration list for PBXProject "YDFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9A2FF1171BDA1AF700A95C25;
+			productRefGroup = 9A2FF1221BDA1AF700A95C25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A2FF1201BDA1AF700A95C25 /* YDFoundation */,
+				9A2FF12A1BDA1AF800A95C25 /* YDFoundationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A2FF11F1BDA1AF700A95C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2FF1291BDA1AF800A95C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A2FF11C1BDA1AF700A95C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2FF2871BDA1BFB00A95C25 /* YDRuntime.m in Sources */,
+				9A2FF2561BDA1BFB00A95C25 /* YDNotification.m in Sources */,
+				9A2FF2471BDA1BFB00A95C25 /* YDFileCache.m in Sources */,
+				9A2FF25A1BDA1BFB00A95C25 /* YDQueue.m in Sources */,
+				9A2FF25B1BDA1BFB00A95C25 /* YDRandom.m in Sources */,
+				9A2FF25C1BDA1BFB00A95C25 /* YDRSA.m in Sources */,
+				9A2FF2491BDA1BFB00A95C25 /* YDMemCache.m in Sources */,
+				9A2FF2811BDA1BFB00A95C25 /* YDRTMethod.m in Sources */,
+				9A2FF2831BDA1BFB00A95C25 /* YDRTProperty.m in Sources */,
+				9A2FF2571BDA1BFB00A95C25 /* YDNumber.m in Sources */,
+				9A2FF2501BDA1BFB00A95C25 /* YDDevice.m in Sources */,
+				9A2FF2611BDA1BFB00A95C25 /* YDThread.m in Sources */,
+				9A2FF25D1BDA1BFB00A95C25 /* YDSandbox.m in Sources */,
+				9A2FF2671BDA1BFB00A95C25 /* YDLogger.m in Sources */,
+				9A2FF2891BDA1BFB00A95C25 /* MBProgressHUD.m in Sources */,
+				9A2FF2521BDA1BFB00A95C25 /* YDExtension.m in Sources */,
+				9A2FF2541BDA1BFB00A95C25 /* YDJSON.m in Sources */,
+				9A2FF27F1BDA1BFB00A95C25 /* YDRTIvar.m in Sources */,
+				9A2FF24B1BDA1BFB00A95C25 /* YDUserDefaults.m in Sources */,
+				9A2FF2581BDA1BFB00A95C25 /* YDObject.m in Sources */,
+				9A2FF24D1BDA1BFB00A95C25 /* YDBundle.m in Sources */,
+				9A2FF2591BDA1BFB00A95C25 /* YDOpQueue.m in Sources */,
+				9A2FF25F1BDA1BFB00A95C25 /* YDStack.m in Sources */,
+				9A2FF2851BDA1BFB00A95C25 /* YDRTProtocol.m in Sources */,
+				9A2FF28B1BDA1BFB00A95C25 /* Reachability.m in Sources */,
+				9A2FF24C1BDA1BFB00A95C25 /* YDBase64.m in Sources */,
+				9A2FF2631BDA1BFB00A95C25 /* YDTree.m in Sources */,
+				9A2FF2601BDA1BFB00A95C25 /* YDString.m in Sources */,
+				9A2FF24F1BDA1BFB00A95C25 /* YDDate.m in Sources */,
+				9A2FF27D1BDA1BFB00A95C25 /* YDRTClass.m in Sources */,
+				9A2FF24E1BDA1BFB00A95C25 /* YDClass.m in Sources */,
+				9A2FF2641BDA1BFB00A95C25 /* YDURL.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2FF1271BDA1AF800A95C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2FF1311BDA1AF800A95C25 /* YDFoundationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A2FF12E1BDA1AF800A95C25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A2FF1201BDA1AF700A95C25 /* YDFoundation */;
+			targetProxy = 9A2FF12D1BDA1AF800A95C25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9A2FF1331BDA1AF800A95C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A2FF1341BDA1AF800A95C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A2FF1361BDA1AF800A95C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YDFoundation/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madding.YDFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9A2FF1371BDA1AF800A95C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YDFoundation/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madding.YDFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9A2FF1391BDA1AF800A95C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YDFoundationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madding.YDFoundationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A2FF13A1BDA1AF800A95C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YDFoundationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madding.YDFoundationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A2FF11B1BDA1AF700A95C25 /* Build configuration list for PBXProject "YDFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2FF1331BDA1AF800A95C25 /* Debug */,
+				9A2FF1341BDA1AF800A95C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2FF1351BDA1AF800A95C25 /* Build configuration list for PBXNativeTarget "YDFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2FF1361BDA1AF800A95C25 /* Debug */,
+				9A2FF1371BDA1AF800A95C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2FF1381BDA1AF800A95C25 /* Build configuration list for PBXNativeTarget "YDFoundationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2FF1391BDA1AF800A95C25 /* Debug */,
+				9A2FF13A1BDA1AF800A95C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A2FF1181BDA1AF700A95C25 /* Project object */;
+}
