@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name                  = "YDFoundation"
-  s.version               = "1.0.0-beta1"
+  s.version               = "1.0.0-beta2"
   s.summary               = "provider foundation api."
   s.description           = "YD Foundation Framework, Provider JSON, Base64, Log etc..."
   s.homepage              = "https://github.com/imadding/YDFoundation"
