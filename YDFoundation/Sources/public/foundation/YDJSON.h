@@ -10,22 +10,19 @@
 
 @interface YDJSON : NSObject
 
-+ (id)jsonDataToObject:(NSData *)jsonData class:(Class)clazz;
-
 + (NSDictionary *)jsonDataToDictionary:(NSData *)jsonData;
-
-+ (NSArray *)jsonDataToArray:(NSData *)jsonData;
-
-
-+ (id)jsonStringToObject:(NSString *)jsonString class:(Class)clazz;
-
 + (NSDictionary *)jsonStringToDictionary:(NSString *)jsonString;
 
++ (NSArray *)jsonDataToArray:(NSData *)jsonData;
 + (NSArray *)jsonStringToArray:(NSString *)jsonString;
 
-
++ (id)jsonStringToObject:(NSString *)jsonString class:(Class)clazz;
 + (NSString *)objectToJsonString:(id)object;
 
++ (id)jsonDataToObject:(NSData *)jsonData class:(Class)clazz;
 + (NSData *)objectToJsonData:(id)object;
-  
+
++ (id)jsonDataToObject:(NSData *)jsonData class:(Class)clazz option:(NSJSONReadingOptions)option;
++ (NSData *)objectToJsonData:(id)object option:(NSJSONWritingOptions)option;
+
 @end

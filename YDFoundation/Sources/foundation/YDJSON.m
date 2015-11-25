@@ -14,13 +14,17 @@
 @implementation YDJSON
 
 + (id)jsonDataToObject:(NSData *)jsonData class:(Class)clazz {
+  return [YDJSON jsonDataToObject:jsonData class:clazz option:NSJSONReadingAllowFragments];
+}
+
++ (id)jsonDataToObject:(NSData *)jsonData class:(Class)clazz option:(NSJSONReadingOptions)option {
   if (!jsonData || [[NSNull null] isEqual:jsonData] ||
       [jsonData isKindOfClass:[NSError class]]) {
     return nil;
   }
   //先调用json kit转化为dictionary或array对象
   id obj = [NSJSONSerialization JSONObjectWithData:jsonData
-                                           options:NSJSONReadingAllowFragments
+                                           options:option
                                              error:nil];
 
   if (![obj isKindOfClass:[NSDictionary class]]) {
@@ -53,7 +57,7 @@
   return [YDJSON jsonStringToObject:jsonString class:[NSArray class]];
 }
 
-+ (NSData *)objectToJsonData:(id)object {
++ (NSData *)objectToJsonData:(id)object option:(NSJSONWritingOptions)option {
   if (object == nil) {
     return nil;
   }
@@ -62,27 +66,18 @@
   id jsonableObject = [YDJSON asJsonableObject:object];
   NSData *jsonData =
       [NSJSONSerialization dataWithJSONObject:jsonableObject
-                                      options:NSJSONWritingPrettyPrinted
+                                      options:option
                                         error:&writeError];
   return jsonData;
 }
++ (NSData *)objectToJsonData:(id)object {
+  return [YDJSON objectToJsonData:object option:NSJSONWritingPrettyPrinted];
+}
 
 + (NSString *)objectToJsonString:(id)object {
-  if (object == nil) {
-    return nil;
-  }
-
-  NSError *writeError = nil;
-  id jsonableObject = [YDJSON asJsonableObject:object];
-  NSData *jsonData =
-      [NSJSONSerialization dataWithJSONObject:jsonableObject
-                                      options:NSJSONWritingPrettyPrinted
-                                        error:&writeError];
-  NSString *jsonString =
-      [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-//  YD_DEBUG(@"JSON Output: %@", jsonString);
-
-  return jsonString;
+  NSData *jsonData = [YDJSON objectToJsonData:object];
+  if(jsonData == nil) return @"";
+  return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
 
 #pragma - Private Method
