@@ -34,14 +34,6 @@
 #define YD_FUNC \
   [[YDLogger sharedInstance] log:YDLogLevelDebug format:__FUNCTION__];
 
-#ifndef logFunc
-  #ifdef DEBUG
-    #define logFunc [YDLogFuncitonInvoke invokeWithName:__FUNCTION__];
-  #else
-    #define logFunc
-  #endif
-#endif
-
 typedef enum {
   YDLogLevelDebug = 0,
   YDLogLevelInfo = 1,

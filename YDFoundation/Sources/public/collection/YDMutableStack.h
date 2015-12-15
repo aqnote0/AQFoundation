@@ -2,13 +2,13 @@
 //  YDStack.h
 //  YDFoundation
 //
-//  Created by madding.lip on 5/19/15.
+//  Created by madding on 5/19/15.
 //  Copyright (c) 2015 yudao. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface YDStack : NSObject
+@interface YDMutableStack<__covariant ObjectType> : NSObject
 
 - (instancetype)initWithSize:(NSUInteger)size NS_DESIGNATED_INITIALIZER;
 

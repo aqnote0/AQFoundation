@@ -2,19 +2,19 @@
 //  YDQueue.m
 //  YDFoundation
 //
-//  Created by madding.lip on 5/20/15.
+//  Created by madding on 5/20/15.
 //  Copyright (c) 2015 yudao. All rights reserved.
 //
 
-#import "YDQueue.h"
+#import "YDMutableQueue.h"
 
-@interface YDQueue ()
+@interface YDMutableQueue ()
 
 @property(nonatomic, strong) NSMutableArray *queue;
 
 @end
 
-@implementation YDQueue
+@implementation YDMutableQueue
 
 #pragma mark - init
 

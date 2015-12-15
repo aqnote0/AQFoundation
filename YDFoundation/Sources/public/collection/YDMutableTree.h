@@ -2,13 +2,13 @@
 //  YDTree.h
 //  YDFoundation
 //
-//  Created by madding.lip on 5/19/15.
+//  Created by madding on 5/19/15.
 //  Copyright (c) 2015 yudao. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface YDTreeNode : NSObject
+@interface YDTreeNode<__covariant ObjectType> : NSObject
 
 @property(nonatomic, strong) id data;
 @property(nonatomic, strong) NSMutableArray *children;
@@ -24,7 +24,7 @@
 
 @end
 
-@interface YDTree : NSObject
+@interface YDMutableTree : NSObject
 
 // 先序遍历
 + (void)preOrder:(YDTreeNode *)node;

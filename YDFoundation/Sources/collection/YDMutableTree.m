@@ -2,18 +2,18 @@
 //  YDTree.m
 //  YDFoundation
 //
-//  Created by madding.lip on 5/19/15.
+//  Created by madding on 5/19/15.
 //  Copyright (c) 2015 yudao. All rights reserved.
 //
 
-#import "YDTree.h"
+#import "YDMutableTree.h"
 
-#import "YDStack.h"
-#import "YDQueue.h"
+#import "YDMutableStack.h"
+#import "YDMutableQueue.h"
 
 @interface DepthOrder : NSObject
 
-@property(nonatomic, retain) YDStack *stack;
+@property(nonatomic, retain) YDMutableStack *stack;
 
 + (instancetype)sharedInstance;
 
@@ -23,7 +23,7 @@
 
 @interface LevelOrder : NSObject
 
-@property(nonatomic, retain) YDQueue *queue;
+@property(nonatomic, retain) YDMutableQueue *queue;
 
 + (instancetype)sharedInstance;
 
@@ -68,7 +68,7 @@
 
 @end
 
-@implementation YDTree
+@implementation YDMutableTree
 
 + (void)preOrder:(YDTreeNode *)node {
   if (node != NULL) {
@@ -116,7 +116,7 @@
 - (instancetype)init {
   self = [super init];
   if (self) {
-    _stack = [[YDStack alloc] initWithSize:128];
+    _stack = [[YDMutableStack alloc] initWithSize:128];
   }
   return self;
 }
@@ -163,7 +163,7 @@
 - (instancetype)init {
   self = [super init];
   if (self) {
-    _queue = [[YDQueue alloc] init];
+    _queue = [[YDMutableQueue alloc] init];
   }
   return self;
 }
