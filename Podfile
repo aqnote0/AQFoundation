@@ -5,11 +5,11 @@
  #
 source "https://github.com/imadding/specs.git"
 
-target 'YDFoundation' do
+target 'AQFoundation' do
 
 end
 
-target 'YDFoundationTests' do
+target 'AQFoundationTests' do
 
 end
 

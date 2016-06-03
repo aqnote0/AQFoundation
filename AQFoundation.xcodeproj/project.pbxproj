@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		077F2BD612E5CB0C4461D355 /* libPods-AQFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E01EB0415D0A58A927633E03 /* libPods-AQFoundation.a */; };
+		22F4D2B3C1410969D9AC61D9 /* libPods-AQFoundationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4205F9C7C0B71536FB0A3AB /* libPods-AQFoundationTests.a */; };
+		9A2FF12C1BDA1AF800A95C25 /* AQFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2FF1211BDA1AF700A95C25 /* AQFoundation.framework */; };
+		9AAC0F451D018DD7004CE032 /* AQFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EE01D018DD7004CE032 /* AQFileCache.m */; };
+		9AAC0F461D018DD7004CE032 /* AQMemCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EE11D018DD7004CE032 /* AQMemCache.m */; };
+		9AAC0F471D018DD7004CE032 /* AQUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EE21D018DD7004CE032 /* AQUserDefaults.m */; };
+		9AAC0F481D018DD7004CE032 /* AQMutableQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EE41D018DD7004CE032 /* AQMutableQueue.m */; };
+		9AAC0F491D018DD7004CE032 /* AQMutableStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EE51D018DD7004CE032 /* AQMutableStack.m */; };
+		9AAC0F4A1D018DD7004CE032 /* AQMutableTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EE61D018DD7004CE032 /* AQMutableTree.m */; };
+		9AAC0F4B1D018DD7004CE032 /* AQSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EE71D018DD7004CE032 /* AQSafeMutableArray.m */; };
+		9AAC0F4C1D018DD7004CE032 /* AQSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EE81D018DD7004CE032 /* AQSafeMutableDictionary.m */; };
+		9AAC0F4D1D018DD7004CE032 /* AQSafeMutableSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EE91D018DD7004CE032 /* AQSafeMutableSet.m */; };
+		9AAC0F4E1D018DD7004CE032 /* AQBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EEB1D018DD7004CE032 /* AQBase64.m */; };
+		9AAC0F4F1D018DD7004CE032 /* AQBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EEC1D018DD7004CE032 /* AQBundle.m */; };
+		9AAC0F501D018DD7004CE032 /* AQClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EED1D018DD7004CE032 /* AQClass.m */; };
+		9AAC0F511D018DD7004CE032 /* AQDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EEE1D018DD7004CE032 /* AQDate.m */; };
+		9AAC0F521D018DD7004CE032 /* AQDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EEF1D018DD7004CE032 /* AQDevice.m */; };
+		9AAC0F531D018DD7004CE032 /* AQExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0EF01D018DD7004CE032 /* AQExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F541D018DD7004CE032 /* AQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EF11D018DD7004CE032 /* AQExtension.m */; };
+		9AAC0F551D018DD7004CE032 /* AQJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EF21D018DD7004CE032 /* AQJSON.m */; };
+		9AAC0F561D018DD7004CE032 /* AQNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0EF31D018DD7004CE032 /* AQNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F571D018DD7004CE032 /* AQNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EF41D018DD7004CE032 /* AQNotification.m */; };
+		9AAC0F581D018DD7004CE032 /* AQNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EF51D018DD7004CE032 /* AQNumber.m */; };
+		9AAC0F591D018DD7004CE032 /* AQObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EF61D018DD7004CE032 /* AQObject.m */; };
+		9AAC0F5A1D018DD7004CE032 /* AQOpQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EF71D018DD7004CE032 /* AQOpQueue.m */; };
+		9AAC0F5B1D018DD7004CE032 /* AQRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EF81D018DD7004CE032 /* AQRandom.m */; };
+		9AAC0F5C1D018DD7004CE032 /* AQRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EF91D018DD7004CE032 /* AQRSA.m */; };
+		9AAC0F5D1D018DD7004CE032 /* AQSandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EFA1D018DD7004CE032 /* AQSandbox.m */; };
+		9AAC0F5E1D018DD7004CE032 /* AQString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EFB1D018DD7004CE032 /* AQString.m */; };
+		9AAC0F5F1D018DD7004CE032 /* AQThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EFC1D018DD7004CE032 /* AQThread.m */; };
+		9AAC0F601D018DD7004CE032 /* AQURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EFD1D018DD7004CE032 /* AQURL.m */; };
+		9AAC0F611D018DD7004CE032 /* AQHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EFF1D018DD7004CE032 /* AQHttpClient.m */; };
+		9AAC0F621D018DD7004CE032 /* AQHttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F001D018DD7004CE032 /* AQHttpUtil.m */; };
+		9AAC0F631D018DD7004CE032 /* AQLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F021D018DD7004CE032 /* AQLogger.m */; };
+		9AAC0F641D018DD7004CE032 /* AQFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F051D018DD7004CE032 /* AQFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F651D018DD7004CE032 /* AQCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F071D018DD7004CE032 /* AQCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F661D018DD7004CE032 /* AQCacheProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F081D018DD7004CE032 /* AQCacheProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F671D018DD7004CE032 /* AQFileCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F091D018DD7004CE032 /* AQFileCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F681D018DD7004CE032 /* AQMemCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F0A1D018DD7004CE032 /* AQMemCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F691D018DD7004CE032 /* AQUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F0B1D018DD7004CE032 /* AQUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F6A1D018DD7004CE032 /* AQMutableQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F0D1D018DD7004CE032 /* AQMutableQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F6B1D018DD7004CE032 /* AQMutableStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F0E1D018DD7004CE032 /* AQMutableStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F6C1D018DD7004CE032 /* AQMutableTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F0F1D018DD7004CE032 /* AQMutableTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F6D1D018DD7004CE032 /* AQSafeMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F101D018DD7004CE032 /* AQSafeMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F6E1D018DD7004CE032 /* AQSafeMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F111D018DD7004CE032 /* AQSafeMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F6F1D018DD7004CE032 /* AQSafeMutableSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F121D018DD7004CE032 /* AQSafeMutableSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F701D018DD7004CE032 /* AQBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F141D018DD7004CE032 /* AQBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F711D018DD7004CE032 /* AQBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F151D018DD7004CE032 /* AQBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F721D018DD7004CE032 /* AQClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F161D018DD7004CE032 /* AQClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F731D018DD7004CE032 /* AQDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F171D018DD7004CE032 /* AQDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F741D018DD7004CE032 /* AQDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F181D018DD7004CE032 /* AQDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F751D018DD7004CE032 /* AQJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F191D018DD7004CE032 /* AQJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F761D018DD7004CE032 /* AQNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F1A1D018DD7004CE032 /* AQNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F771D018DD7004CE032 /* AQObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F1B1D018DD7004CE032 /* AQObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F781D018DD7004CE032 /* AQOpQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F1C1D018DD7004CE032 /* AQOpQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F791D018DD7004CE032 /* AQOpQueueFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F1D1D018DD7004CE032 /* AQOpQueueFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F7A1D018DD7004CE032 /* AQRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F1E1D018DD7004CE032 /* AQRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F7B1D018DD7004CE032 /* AQRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F1F1D018DD7004CE032 /* AQRSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F7C1D018DD7004CE032 /* AQSandbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F201D018DD7004CE032 /* AQSandbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F7D1D018DD7004CE032 /* AQSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F211D018DD7004CE032 /* AQSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F7E1D018DD7004CE032 /* AQString.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F221D018DD7004CE032 /* AQString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F7F1D018DD7004CE032 /* AQThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F231D018DD7004CE032 /* AQThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F801D018DD7004CE032 /* AQURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F241D018DD7004CE032 /* AQURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F811D018DD7004CE032 /* AQHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F261D018DD7004CE032 /* AQHttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F821D018DD7004CE032 /* AQHttpUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F271D018DD7004CE032 /* AQHttpUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F831D018DD7004CE032 /* AQCompile.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F291D018DD7004CE032 /* AQCompile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F841D018DD7004CE032 /* AQLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F2A1D018DD7004CE032 /* AQLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F851D018DD7004CE032 /* AQRTClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F2C1D018DD7004CE032 /* AQRTClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F861D018DD7004CE032 /* AQRTIvar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F2D1D018DD7004CE032 /* AQRTIvar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F871D018DD7004CE032 /* AQRTMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F2E1D018DD7004CE032 /* AQRTMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F881D018DD7004CE032 /* AQRTProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F2F1D018DD7004CE032 /* AQRTProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F891D018DD7004CE032 /* AQRTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F301D018DD7004CE032 /* AQRTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F8A1D018DD7004CE032 /* AQRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F311D018DD7004CE032 /* AQRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F8B1D018DD7004CE032 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F331D018DD7004CE032 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F8C1D018DD7004CE032 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAC0F341D018DD7004CE032 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC0F8D1D018DD7004CE032 /* AQRTClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F361D018DD7004CE032 /* AQRTClass.m */; };
+		9AAC0F8E1D018DD7004CE032 /* AQRTIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F371D018DD7004CE032 /* AQRTIvar.m */; };
+		9AAC0F8F1D018DD7004CE032 /* AQRTMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F381D018DD7004CE032 /* AQRTMethod.m */; };
+		9AAC0F901D018DD7004CE032 /* AQRTProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F391D018DD7004CE032 /* AQRTProperty.m */; };
+		9AAC0F911D018DD7004CE032 /* AQRTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F3A1D018DD7004CE032 /* AQRTProtocol.m */; };
+		9AAC0F921D018DD7004CE032 /* AQRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F3B1D018DD7004CE032 /* AQRuntime.m */; };
+		9AAC0F931D018DD7004CE032 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F3E1D018DD7004CE032 /* MBProgressHUD.m */; };
+		9AAC0F941D018DD7004CE032 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F401D018DD7004CE032 /* Reachability.m */; };
+		9AAC0F971D018DF7004CE032 /* AQFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F431D018DD7004CE032 /* AQFoundationTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A2FF12D1BDA1AF800A95C25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A2FF1181BDA1AF700A95C25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A2FF1201BDA1AF700A95C25;
+			remoteInfo = AQFoundation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72CB975379A104EB89C4D231 /* Pods-AQFoundationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQFoundationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AQFoundationTests/Pods-AQFoundationTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E01C9B59602AD599E51CD01 /* Pods-AQFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQFoundation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AQFoundation/Pods-AQFoundation.debug.xcconfig"; sourceTree = "<group>"; };
+		9A2FF1211BDA1AF700A95C25 /* AQFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AQFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2FF12B1BDA1AF800A95C25 /* AQFoundation.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AQFoundation.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AAC0EDD1D018DD7004CE032 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AAC0EE01D018DD7004CE032 /* AQFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQFileCache.m; sourceTree = "<group>"; };
+		9AAC0EE11D018DD7004CE032 /* AQMemCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQMemCache.m; sourceTree = "<group>"; };
+		9AAC0EE21D018DD7004CE032 /* AQUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQUserDefaults.m; sourceTree = "<group>"; };
+		9AAC0EE41D018DD7004CE032 /* AQMutableQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQMutableQueue.m; sourceTree = "<group>"; };
+		9AAC0EE51D018DD7004CE032 /* AQMutableStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQMutableStack.m; sourceTree = "<group>"; };
+		9AAC0EE61D018DD7004CE032 /* AQMutableTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQMutableTree.m; sourceTree = "<group>"; };
+		9AAC0EE71D018DD7004CE032 /* AQSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQSafeMutableArray.m; sourceTree = "<group>"; };
+		9AAC0EE81D018DD7004CE032 /* AQSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQSafeMutableDictionary.m; sourceTree = "<group>"; };
+		9AAC0EE91D018DD7004CE032 /* AQSafeMutableSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQSafeMutableSet.m; sourceTree = "<group>"; };
+		9AAC0EEB1D018DD7004CE032 /* AQBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQBase64.m; sourceTree = "<group>"; };
+		9AAC0EEC1D018DD7004CE032 /* AQBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQBundle.m; sourceTree = "<group>"; };
+		9AAC0EED1D018DD7004CE032 /* AQClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQClass.m; sourceTree = "<group>"; };
+		9AAC0EEE1D018DD7004CE032 /* AQDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQDate.m; sourceTree = "<group>"; };
+		9AAC0EEF1D018DD7004CE032 /* AQDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQDevice.m; sourceTree = "<group>"; };
+		9AAC0EF01D018DD7004CE032 /* AQExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQExtension.h; sourceTree = "<group>"; };
+		9AAC0EF11D018DD7004CE032 /* AQExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQExtension.m; sourceTree = "<group>"; };
+		9AAC0EF21D018DD7004CE032 /* AQJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQJSON.m; sourceTree = "<group>"; };
+		9AAC0EF31D018DD7004CE032 /* AQNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQNotification.h; sourceTree = "<group>"; };
+		9AAC0EF41D018DD7004CE032 /* AQNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQNotification.m; sourceTree = "<group>"; };
+		9AAC0EF51D018DD7004CE032 /* AQNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQNumber.m; sourceTree = "<group>"; };
+		9AAC0EF61D018DD7004CE032 /* AQObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQObject.m; sourceTree = "<group>"; };
+		9AAC0EF71D018DD7004CE032 /* AQOpQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQOpQueue.m; sourceTree = "<group>"; };
+		9AAC0EF81D018DD7004CE032 /* AQRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQRandom.m; sourceTree = "<group>"; };
+		9AAC0EF91D018DD7004CE032 /* AQRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQRSA.m; sourceTree = "<group>"; };
+		9AAC0EFA1D018DD7004CE032 /* AQSandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQSandbox.m; sourceTree = "<group>"; };
+		9AAC0EFB1D018DD7004CE032 /* AQString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQString.m; sourceTree = "<group>"; };
+		9AAC0EFC1D018DD7004CE032 /* AQThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQThread.m; sourceTree = "<group>"; };
+		9AAC0EFD1D018DD7004CE032 /* AQURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQURL.m; sourceTree = "<group>"; };
+		9AAC0EFF1D018DD7004CE032 /* AQHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQHttpClient.m; sourceTree = "<group>"; };
+		9AAC0F001D018DD7004CE032 /* AQHttpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQHttpUtil.m; sourceTree = "<group>"; };
+		9AAC0F021D018DD7004CE032 /* AQLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQLogger.m; sourceTree = "<group>"; };
+		9AAC0F051D018DD7004CE032 /* AQFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQFoundation.h; sourceTree = "<group>"; };
+		9AAC0F071D018DD7004CE032 /* AQCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQCache.h; sourceTree = "<group>"; };
+		9AAC0F081D018DD7004CE032 /* AQCacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQCacheProtocol.h; sourceTree = "<group>"; };
+		9AAC0F091D018DD7004CE032 /* AQFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQFileCache.h; sourceTree = "<group>"; };
+		9AAC0F0A1D018DD7004CE032 /* AQMemCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQMemCache.h; sourceTree = "<group>"; };
+		9AAC0F0B1D018DD7004CE032 /* AQUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQUserDefaults.h; sourceTree = "<group>"; };
+		9AAC0F0D1D018DD7004CE032 /* AQMutableQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQMutableQueue.h; sourceTree = "<group>"; };
+		9AAC0F0E1D018DD7004CE032 /* AQMutableStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQMutableStack.h; sourceTree = "<group>"; };
+		9AAC0F0F1D018DD7004CE032 /* AQMutableTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQMutableTree.h; sourceTree = "<group>"; };
+		9AAC0F101D018DD7004CE032 /* AQSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQSafeMutableArray.h; sourceTree = "<group>"; };
+		9AAC0F111D018DD7004CE032 /* AQSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQSafeMutableDictionary.h; sourceTree = "<group>"; };
+		9AAC0F121D018DD7004CE032 /* AQSafeMutableSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQSafeMutableSet.h; sourceTree = "<group>"; };
+		9AAC0F141D018DD7004CE032 /* AQBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQBase64.h; sourceTree = "<group>"; };
+		9AAC0F151D018DD7004CE032 /* AQBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQBundle.h; sourceTree = "<group>"; };
+		9AAC0F161D018DD7004CE032 /* AQClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQClass.h; sourceTree = "<group>"; };
+		9AAC0F171D018DD7004CE032 /* AQDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQDate.h; sourceTree = "<group>"; };
+		9AAC0F181D018DD7004CE032 /* AQDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQDevice.h; sourceTree = "<group>"; };
+		9AAC0F191D018DD7004CE032 /* AQJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQJSON.h; sourceTree = "<group>"; };
+		9AAC0F1A1D018DD7004CE032 /* AQNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQNumber.h; sourceTree = "<group>"; };
+		9AAC0F1B1D018DD7004CE032 /* AQObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQObject.h; sourceTree = "<group>"; };
+		9AAC0F1C1D018DD7004CE032 /* AQOpQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQOpQueue.h; sourceTree = "<group>"; };
+		9AAC0F1D1D018DD7004CE032 /* AQOpQueueFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQOpQueueFactory.h; sourceTree = "<group>"; };
+		9AAC0F1E1D018DD7004CE032 /* AQRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRandom.h; sourceTree = "<group>"; };
+		9AAC0F1F1D018DD7004CE032 /* AQRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRSA.h; sourceTree = "<group>"; };
+		9AAC0F201D018DD7004CE032 /* AQSandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQSandbox.h; sourceTree = "<group>"; };
+		9AAC0F211D018DD7004CE032 /* AQSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQSingleton.h; sourceTree = "<group>"; };
+		9AAC0F221D018DD7004CE032 /* AQString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQString.h; sourceTree = "<group>"; };
+		9AAC0F231D018DD7004CE032 /* AQThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQThread.h; sourceTree = "<group>"; };
+		9AAC0F241D018DD7004CE032 /* AQURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQURL.h; sourceTree = "<group>"; };
+		9AAC0F261D018DD7004CE032 /* AQHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQHttpClient.h; sourceTree = "<group>"; };
+		9AAC0F271D018DD7004CE032 /* AQHttpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQHttpUtil.h; sourceTree = "<group>"; };
+		9AAC0F291D018DD7004CE032 /* AQCompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQCompile.h; sourceTree = "<group>"; };
+		9AAC0F2A1D018DD7004CE032 /* AQLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQLogger.h; sourceTree = "<group>"; };
+		9AAC0F2C1D018DD7004CE032 /* AQRTClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRTClass.h; sourceTree = "<group>"; };
+		9AAC0F2D1D018DD7004CE032 /* AQRTIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRTIvar.h; sourceTree = "<group>"; };
+		9AAC0F2E1D018DD7004CE032 /* AQRTMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRTMethod.h; sourceTree = "<group>"; };
+		9AAC0F2F1D018DD7004CE032 /* AQRTProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRTProperty.h; sourceTree = "<group>"; };
+		9AAC0F301D018DD7004CE032 /* AQRTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRTProtocol.h; sourceTree = "<group>"; };
+		9AAC0F311D018DD7004CE032 /* AQRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQRuntime.h; sourceTree = "<group>"; };
+		9AAC0F331D018DD7004CE032 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9AAC0F341D018DD7004CE032 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		9AAC0F361D018DD7004CE032 /* AQRTClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQRTClass.m; sourceTree = "<group>"; };
+		9AAC0F371D018DD7004CE032 /* AQRTIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQRTIvar.m; sourceTree = "<group>"; };
+		9AAC0F381D018DD7004CE032 /* AQRTMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQRTMethod.m; sourceTree = "<group>"; };
+		9AAC0F391D018DD7004CE032 /* AQRTProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQRTProperty.m; sourceTree = "<group>"; };
+		9AAC0F3A1D018DD7004CE032 /* AQRTProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQRTProtocol.m; sourceTree = "<group>"; };
+		9AAC0F3B1D018DD7004CE032 /* AQRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQRuntime.m; sourceTree = "<group>"; };
+		9AAC0F3E1D018DD7004CE032 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9AAC0F401D018DD7004CE032 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		9AAC0F421D018DD7004CE032 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AAC0F431D018DD7004CE032 /* AQFoundationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQFoundationTests.m; sourceTree = "<group>"; };
+		D4205F9C7C0B71536FB0A3AB /* libPods-AQFoundationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AQFoundationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01EB0415D0A58A927633E03 /* libPods-AQFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AQFoundation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6239157CAA9B728F2A05F03 /* Pods-AQFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQFoundation.release.xcconfig"; path = "Pods/Target Support Files/Pods-AQFoundation/Pods-AQFoundation.release.xcconfig"; sourceTree = "<group>"; };
+		FD8245B3C7AAC8F7C990EDEC /* Pods-AQFoundationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQFoundationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AQFoundationTests/Pods-AQFoundationTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A2FF11D1BDA1AF700A95C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077F2BD612E5CB0C4461D355 /* libPods-AQFoundation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2FF1281BDA1AF800A95C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2FF12C1BDA1AF800A95C25 /* AQFoundation.framework in Frameworks */,
+				22F4D2B3C1410969D9AC61D9 /* libPods-AQFoundationTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3935BD20D8338AF9BC2AE6A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E01C9B59602AD599E51CD01 /* Pods-AQFoundation.debug.xcconfig */,
+				F6239157CAA9B728F2A05F03 /* Pods-AQFoundation.release.xcconfig */,
+				FD8245B3C7AAC8F7C990EDEC /* Pods-AQFoundationTests.debug.xcconfig */,
+				72CB975379A104EB89C4D231 /* Pods-AQFoundationTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92D710571EBF626B879E45E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E01EB0415D0A58A927633E03 /* libPods-AQFoundation.a */,
+				D4205F9C7C0B71536FB0A3AB /* libPods-AQFoundationTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A2FF1171BDA1AF700A95C25 = {
+			isa = PBXGroup;
+			children = (
+				9AAC0EDB1D018DD7004CE032 /* AQFoundation */,
+				9AAC0F411D018DD7004CE032 /* AQFoundationTests */,
+				9A2FF1221BDA1AF700A95C25 /* Products */,
+				3935BD20D8338AF9BC2AE6A0 /* Pods */,
+				92D710571EBF626B879E45E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9A2FF1221BDA1AF700A95C25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF1211BDA1AF700A95C25 /* AQFoundation.framework */,
+				9A2FF12B1BDA1AF800A95C25 /* AQFoundation.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AAC0EDB1D018DD7004CE032 /* AQFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0EDC1D018DD7004CE032 /* Resources */,
+				9AAC0EDE1D018DD7004CE032 /* Sources */,
+			);
+			path = AQFoundation;
+			sourceTree = "<group>";
+		};
+		9AAC0EDC1D018DD7004CE032 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0EDD1D018DD7004CE032 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9AAC0EDE1D018DD7004CE032 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0EDF1D018DD7004CE032 /* cache */,
+				9AAC0EE31D018DD7004CE032 /* collection */,
+				9AAC0EEA1D018DD7004CE032 /* foundation */,
+				9AAC0EFE1D018DD7004CE032 /* httpclient */,
+				9AAC0F011D018DD7004CE032 /* log */,
+				9AAC0F031D018DD7004CE032 /* public */,
+				9AAC0F351D018DD7004CE032 /* runtime */,
+				9AAC0F3C1D018DD7004CE032 /* vendor */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9AAC0EDF1D018DD7004CE032 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0EE01D018DD7004CE032 /* AQFileCache.m */,
+				9AAC0EE11D018DD7004CE032 /* AQMemCache.m */,
+				9AAC0EE21D018DD7004CE032 /* AQUserDefaults.m */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		9AAC0EE31D018DD7004CE032 /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0EE41D018DD7004CE032 /* AQMutableQueue.m */,
+				9AAC0EE51D018DD7004CE032 /* AQMutableStack.m */,
+				9AAC0EE61D018DD7004CE032 /* AQMutableTree.m */,
+				9AAC0EE71D018DD7004CE032 /* AQSafeMutableArray.m */,
+				9AAC0EE81D018DD7004CE032 /* AQSafeMutableDictionary.m */,
+				9AAC0EE91D018DD7004CE032 /* AQSafeMutableSet.m */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
+		9AAC0EEA1D018DD7004CE032 /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0EEB1D018DD7004CE032 /* AQBase64.m */,
+				9AAC0EEC1D018DD7004CE032 /* AQBundle.m */,
+				9AAC0EED1D018DD7004CE032 /* AQClass.m */,
+				9AAC0EEE1D018DD7004CE032 /* AQDate.m */,
+				9AAC0EEF1D018DD7004CE032 /* AQDevice.m */,
+				9AAC0EF01D018DD7004CE032 /* AQExtension.h */,
+				9AAC0EF11D018DD7004CE032 /* AQExtension.m */,
+				9AAC0EF21D018DD7004CE032 /* AQJSON.m */,
+				9AAC0EF31D018DD7004CE032 /* AQNotification.h */,
+				9AAC0EF41D018DD7004CE032 /* AQNotification.m */,
+				9AAC0EF51D018DD7004CE032 /* AQNumber.m */,
+				9AAC0EF61D018DD7004CE032 /* AQObject.m */,
+				9AAC0EF71D018DD7004CE032 /* AQOpQueue.m */,
+				9AAC0EF81D018DD7004CE032 /* AQRandom.m */,
+				9AAC0EF91D018DD7004CE032 /* AQRSA.m */,
+				9AAC0EFA1D018DD7004CE032 /* AQSandbox.m */,
+				9AAC0EFB1D018DD7004CE032 /* AQString.m */,
+				9AAC0EFC1D018DD7004CE032 /* AQThread.m */,
+				9AAC0EFD1D018DD7004CE032 /* AQURL.m */,
+			);
+			path = foundation;
+			sourceTree = "<group>";
+		};
+		9AAC0EFE1D018DD7004CE032 /* httpclient */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0EFF1D018DD7004CE032 /* AQHttpClient.m */,
+				9AAC0F001D018DD7004CE032 /* AQHttpUtil.m */,
+			);
+			path = httpclient;
+			sourceTree = "<group>";
+		};
+		9AAC0F011D018DD7004CE032 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F021D018DD7004CE032 /* AQLogger.m */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		9AAC0F031D018DD7004CE032 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F041D018DD7004CE032 /* bundle */,
+				9AAC0F061D018DD7004CE032 /* cache */,
+				9AAC0F0C1D018DD7004CE032 /* collection */,
+				9AAC0F131D018DD7004CE032 /* foundation */,
+				9AAC0F251D018DD7004CE032 /* httpclient */,
+				9AAC0F281D018DD7004CE032 /* log */,
+				9AAC0F2B1D018DD7004CE032 /* runtime */,
+				9AAC0F321D018DD7004CE032 /* vendor */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		9AAC0F041D018DD7004CE032 /* bundle */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F051D018DD7004CE032 /* AQFoundation.h */,
+			);
+			path = bundle;
+			sourceTree = "<group>";
+		};
+		9AAC0F061D018DD7004CE032 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F071D018DD7004CE032 /* AQCache.h */,
+				9AAC0F081D018DD7004CE032 /* AQCacheProtocol.h */,
+				9AAC0F091D018DD7004CE032 /* AQFileCache.h */,
+				9AAC0F0A1D018DD7004CE032 /* AQMemCache.h */,
+				9AAC0F0B1D018DD7004CE032 /* AQUserDefaults.h */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		9AAC0F0C1D018DD7004CE032 /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F0D1D018DD7004CE032 /* AQMutableQueue.h */,
+				9AAC0F0E1D018DD7004CE032 /* AQMutableStack.h */,
+				9AAC0F0F1D018DD7004CE032 /* AQMutableTree.h */,
+				9AAC0F101D018DD7004CE032 /* AQSafeMutableArray.h */,
+				9AAC0F111D018DD7004CE032 /* AQSafeMutableDictionary.h */,
+				9AAC0F121D018DD7004CE032 /* AQSafeMutableSet.h */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
+		9AAC0F131D018DD7004CE032 /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F141D018DD7004CE032 /* AQBase64.h */,
+				9AAC0F151D018DD7004CE032 /* AQBundle.h */,
+				9AAC0F161D018DD7004CE032 /* AQClass.h */,
+				9AAC0F171D018DD7004CE032 /* AQDate.h */,
+				9AAC0F181D018DD7004CE032 /* AQDevice.h */,
+				9AAC0F191D018DD7004CE032 /* AQJSON.h */,
+				9AAC0F1A1D018DD7004CE032 /* AQNumber.h */,
+				9AAC0F1B1D018DD7004CE032 /* AQObject.h */,
+				9AAC0F1C1D018DD7004CE032 /* AQOpQueue.h */,
+				9AAC0F1D1D018DD7004CE032 /* AQOpQueueFactory.h */,
+				9AAC0F1E1D018DD7004CE032 /* AQRandom.h */,
+				9AAC0F1F1D018DD7004CE032 /* AQRSA.h */,
+				9AAC0F201D018DD7004CE032 /* AQSandbox.h */,
+				9AAC0F211D018DD7004CE032 /* AQSingleton.h */,
+				9AAC0F221D018DD7004CE032 /* AQString.h */,
+				9AAC0F231D018DD7004CE032 /* AQThread.h */,
+				9AAC0F241D018DD7004CE032 /* AQURL.h */,
+			);
+			path = foundation;
+			sourceTree = "<group>";
+		};
+		9AAC0F251D018DD7004CE032 /* httpclient */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F261D018DD7004CE032 /* AQHttpClient.h */,
+				9AAC0F271D018DD7004CE032 /* AQHttpUtil.h */,
+			);
+			path = httpclient;
+			sourceTree = "<group>";
+		};
+		9AAC0F281D018DD7004CE032 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F291D018DD7004CE032 /* AQCompile.h */,
+				9AAC0F2A1D018DD7004CE032 /* AQLogger.h */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		9AAC0F2B1D018DD7004CE032 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F2C1D018DD7004CE032 /* AQRTClass.h */,
+				9AAC0F2D1D018DD7004CE032 /* AQRTIvar.h */,
+				9AAC0F2E1D018DD7004CE032 /* AQRTMethod.h */,
+				9AAC0F2F1D018DD7004CE032 /* AQRTProperty.h */,
+				9AAC0F301D018DD7004CE032 /* AQRTProtocol.h */,
+				9AAC0F311D018DD7004CE032 /* AQRuntime.h */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		9AAC0F321D018DD7004CE032 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F331D018DD7004CE032 /* MBProgressHUD.h */,
+				9AAC0F341D018DD7004CE032 /* Reachability.h */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		9AAC0F351D018DD7004CE032 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F361D018DD7004CE032 /* AQRTClass.m */,
+				9AAC0F371D018DD7004CE032 /* AQRTIvar.m */,
+				9AAC0F381D018DD7004CE032 /* AQRTMethod.m */,
+				9AAC0F391D018DD7004CE032 /* AQRTProperty.m */,
+				9AAC0F3A1D018DD7004CE032 /* AQRTProtocol.m */,
+				9AAC0F3B1D018DD7004CE032 /* AQRuntime.m */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		9AAC0F3C1D018DD7004CE032 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F3D1D018DD7004CE032 /* hud */,
+				9AAC0F3F1D018DD7004CE032 /* reachability */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		9AAC0F3D1D018DD7004CE032 /* hud */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F3E1D018DD7004CE032 /* MBProgressHUD.m */,
+			);
+			path = hud;
+			sourceTree = "<group>";
+		};
+		9AAC0F3F1D018DD7004CE032 /* reachability */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F401D018DD7004CE032 /* Reachability.m */,
+			);
+			path = reachability;
+			sourceTree = "<group>";
+		};
+		9AAC0F411D018DD7004CE032 /* AQFoundationTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AAC0F421D018DD7004CE032 /* Info.plist */,
+				9AAC0F431D018DD7004CE032 /* AQFoundationTests.m */,
+			);
+			path = AQFoundationTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9A2FF11E1BDA1AF700A95C25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AAC0F811D018DD7004CE032 /* AQHttpClient.h in Headers */,
+				9AAC0F741D018DD7004CE032 /* AQDevice.h in Headers */,
+				9AAC0F6F1D018DD7004CE032 /* AQSafeMutableSet.h in Headers */,
+				9AAC0F731D018DD7004CE032 /* AQDate.h in Headers */,
+				9AAC0F721D018DD7004CE032 /* AQClass.h in Headers */,
+				9AAC0F781D018DD7004CE032 /* AQOpQueue.h in Headers */,
+				9AAC0F7C1D018DD7004CE032 /* AQSandbox.h in Headers */,
+				9AAC0F681D018DD7004CE032 /* AQMemCache.h in Headers */,
+				9AAC0F7F1D018DD7004CE032 /* AQThread.h in Headers */,
+				9AAC0F651D018DD7004CE032 /* AQCache.h in Headers */,
+				9AAC0F8B1D018DD7004CE032 /* MBProgressHUD.h in Headers */,
+				9AAC0F871D018DD7004CE032 /* AQRTMethod.h in Headers */,
+				9AAC0F8A1D018DD7004CE032 /* AQRuntime.h in Headers */,
+				9AAC0F771D018DD7004CE032 /* AQObject.h in Headers */,
+				9AAC0F801D018DD7004CE032 /* AQURL.h in Headers */,
+				9AAC0F691D018DD7004CE032 /* AQUserDefaults.h in Headers */,
+				9AAC0F831D018DD7004CE032 /* AQCompile.h in Headers */,
+				9AAC0F881D018DD7004CE032 /* AQRTProperty.h in Headers */,
+				9AAC0F791D018DD7004CE032 /* AQOpQueueFactory.h in Headers */,
+				9AAC0F8C1D018DD7004CE032 /* Reachability.h in Headers */,
+				9AAC0F891D018DD7004CE032 /* AQRTProtocol.h in Headers */,
+				9AAC0F6E1D018DD7004CE032 /* AQSafeMutableDictionary.h in Headers */,
+				9AAC0F821D018DD7004CE032 /* AQHttpUtil.h in Headers */,
+				9AAC0F6B1D018DD7004CE032 /* AQMutableStack.h in Headers */,
+				9AAC0F7A1D018DD7004CE032 /* AQRandom.h in Headers */,
+				9AAC0F751D018DD7004CE032 /* AQJSON.h in Headers */,
+				9AAC0F7B1D018DD7004CE032 /* AQRSA.h in Headers */,
+				9AAC0F641D018DD7004CE032 /* AQFoundation.h in Headers */,
+				9AAC0F711D018DD7004CE032 /* AQBundle.h in Headers */,
+				9AAC0F841D018DD7004CE032 /* AQLogger.h in Headers */,
+				9AAC0F671D018DD7004CE032 /* AQFileCache.h in Headers */,
+				9AAC0F701D018DD7004CE032 /* AQBase64.h in Headers */,
+				9AAC0F861D018DD7004CE032 /* AQRTIvar.h in Headers */,
+				9AAC0F851D018DD7004CE032 /* AQRTClass.h in Headers */,
+				9AAC0F661D018DD7004CE032 /* AQCacheProtocol.h in Headers */,
+				9AAC0F6A1D018DD7004CE032 /* AQMutableQueue.h in Headers */,
+				9AAC0F7E1D018DD7004CE032 /* AQString.h in Headers */,
+				9AAC0F6C1D018DD7004CE032 /* AQMutableTree.h in Headers */,
+				9AAC0F561D018DD7004CE032 /* AQNotification.h in Headers */,
+				9AAC0F531D018DD7004CE032 /* AQExtension.h in Headers */,
+				9AAC0F6D1D018DD7004CE032 /* AQSafeMutableArray.h in Headers */,
+				9AAC0F761D018DD7004CE032 /* AQNumber.h in Headers */,
+				9AAC0F7D1D018DD7004CE032 /* AQSingleton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9A2FF1201BDA1AF700A95C25 /* AQFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A2FF1351BDA1AF800A95C25 /* Build configuration list for PBXNativeTarget "AQFoundation" */;
+			buildPhases = (
+				A43A7812F5C0BB8C08ADCCA9 /* 📦 Check Pods Manifest.lock */,
+				9A2FF11C1BDA1AF700A95C25 /* Sources */,
+				9A2FF11D1BDA1AF700A95C25 /* Frameworks */,
+				9A2FF11E1BDA1AF700A95C25 /* Headers */,
+				9A2FF11F1BDA1AF700A95C25 /* Resources */,
+				5FCBB485CF2B3C8B55A9EEBE /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AQFoundation;
+			productName = AQFoundation;
+			productReference = 9A2FF1211BDA1AF700A95C25 /* AQFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9A2FF12A1BDA1AF800A95C25 /* AQFoundationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A2FF1381BDA1AF800A95C25 /* Build configuration list for PBXNativeTarget "AQFoundationTests" */;
+			buildPhases = (
+				F0F97C7E45D26ABFAC0661F1 /* 📦 Check Pods Manifest.lock */,
+				9A2FF1271BDA1AF800A95C25 /* Sources */,
+				9A2FF1281BDA1AF800A95C25 /* Frameworks */,
+				9A2FF1291BDA1AF800A95C25 /* Resources */,
+				0F4BA04B4B557E8FAF367A2A /* 📦 Embed Pods Frameworks */,
+				E8A19AC2A24B62D1551E7CC3 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A2FF12E1BDA1AF800A95C25 /* PBXTargetDependency */,
+			);
+			name = AQFoundationTests;
+			productName = AQFoundationTests;
+			productReference = 9A2FF12B1BDA1AF800A95C25 /* AQFoundation.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A2FF1181BDA1AF700A95C25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = madding;
+				TargetAttributes = {
+					9A2FF1201BDA1AF700A95C25 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = WE5AVK72GR;
+					};
+					9A2FF12A1BDA1AF800A95C25 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = WE5AVK72GR;
+					};
+				};
+			};
+			buildConfigurationList = 9A2FF11B1BDA1AF700A95C25 /* Build configuration list for PBXProject "AQFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9A2FF1171BDA1AF700A95C25;
+			productRefGroup = 9A2FF1221BDA1AF700A95C25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A2FF1201BDA1AF700A95C25 /* AQFoundation */,
+				9A2FF12A1BDA1AF800A95C25 /* AQFoundationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A2FF11F1BDA1AF700A95C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2FF1291BDA1AF800A95C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F4BA04B4B557E8FAF367A2A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AQFoundationTests/Pods-AQFoundationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FCBB485CF2B3C8B55A9EEBE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AQFoundation/Pods-AQFoundation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A43A7812F5C0BB8C08ADCCA9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8A19AC2A24B62D1551E7CC3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AQFoundationTests/Pods-AQFoundationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F97C7E45D26ABFAC0661F1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A2FF11C1BDA1AF700A95C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AAC0F541D018DD7004CE032 /* AQExtension.m in Sources */,
+				9AAC0F511D018DD7004CE032 /* AQDate.m in Sources */,
+				9AAC0F911D018DD7004CE032 /* AQRTProtocol.m in Sources */,
+				9AAC0F621D018DD7004CE032 /* AQHttpUtil.m in Sources */,
+				9AAC0F4C1D018DD7004CE032 /* AQSafeMutableDictionary.m in Sources */,
+				9AAC0F451D018DD7004CE032 /* AQFileCache.m in Sources */,
+				9AAC0F941D018DD7004CE032 /* Reachability.m in Sources */,
+				9AAC0F601D018DD7004CE032 /* AQURL.m in Sources */,
+				9AAC0F5D1D018DD7004CE032 /* AQSandbox.m in Sources */,
+				9AAC0F901D018DD7004CE032 /* AQRTProperty.m in Sources */,
+				9AAC0F8E1D018DD7004CE032 /* AQRTIvar.m in Sources */,
+				9AAC0F4B1D018DD7004CE032 /* AQSafeMutableArray.m in Sources */,
+				9AAC0F4E1D018DD7004CE032 /* AQBase64.m in Sources */,
+				9AAC0F4A1D018DD7004CE032 /* AQMutableTree.m in Sources */,
+				9AAC0F8F1D018DD7004CE032 /* AQRTMethod.m in Sources */,
+				9AAC0F611D018DD7004CE032 /* AQHttpClient.m in Sources */,
+				9AAC0F921D018DD7004CE032 /* AQRuntime.m in Sources */,
+				9AAC0F631D018DD7004CE032 /* AQLogger.m in Sources */,
+				9AAC0F4D1D018DD7004CE032 /* AQSafeMutableSet.m in Sources */,
+				9AAC0F461D018DD7004CE032 /* AQMemCache.m in Sources */,
+				9AAC0F471D018DD7004CE032 /* AQUserDefaults.m in Sources */,
+				9AAC0F551D018DD7004CE032 /* AQJSON.m in Sources */,
+				9AAC0F5F1D018DD7004CE032 /* AQThread.m in Sources */,
+				9AAC0F4F1D018DD7004CE032 /* AQBundle.m in Sources */,
+				9AAC0F521D018DD7004CE032 /* AQDevice.m in Sources */,
+				9AAC0F5C1D018DD7004CE032 /* AQRSA.m in Sources */,
+				9AAC0F5B1D018DD7004CE032 /* AQRandom.m in Sources */,
+				9AAC0F491D018DD7004CE032 /* AQMutableStack.m in Sources */,
+				9AAC0F5E1D018DD7004CE032 /* AQString.m in Sources */,
+				9AAC0F8D1D018DD7004CE032 /* AQRTClass.m in Sources */,
+				9AAC0F481D018DD7004CE032 /* AQMutableQueue.m in Sources */,
+				9AAC0F581D018DD7004CE032 /* AQNumber.m in Sources */,
+				9AAC0F931D018DD7004CE032 /* MBProgressHUD.m in Sources */,
+				9AAC0F501D018DD7004CE032 /* AQClass.m in Sources */,
+				9AAC0F571D018DD7004CE032 /* AQNotification.m in Sources */,
+				9AAC0F591D018DD7004CE032 /* AQObject.m in Sources */,
+				9AAC0F5A1D018DD7004CE032 /* AQOpQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2FF1271BDA1AF800A95C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AAC0F971D018DF7004CE032 /* AQFoundationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A2FF12E1BDA1AF800A95C25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A2FF1201BDA1AF700A95C25 /* AQFoundation */;
+			targetProxy = 9A2FF12D1BDA1AF800A95C25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9A2FF1331BDA1AF800A95C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A2FF1341BDA1AF800A95C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A2FF1361BDA1AF800A95C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E01C9B59602AD599E51CD01 /* Pods-AQFoundation.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AQFoundation/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madding.AQFoundation;
+				PRODUCT_NAME = AQFoundation;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9A2FF1371BDA1AF800A95C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6239157CAA9B728F2A05F03 /* Pods-AQFoundation.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AQFoundation/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madding.AQFoundation;
+				PRODUCT_NAME = AQFoundation;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9A2FF1391BDA1AF800A95C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD8245B3C7AAC8F7C990EDEC /* Pods-AQFoundationTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = AQFoundationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madding.AQFoundationTests;
+				PRODUCT_NAME = AQFoundation;
+			};
+			name = Debug;
+		};
+		9A2FF13A1BDA1AF800A95C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72CB975379A104EB89C4D231 /* Pods-AQFoundationTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = AQFoundationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madding.AQFoundationTests;
+				PRODUCT_NAME = AQFoundation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A2FF11B1BDA1AF700A95C25 /* Build configuration list for PBXProject "AQFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2FF1331BDA1AF800A95C25 /* Debug */,
+				9A2FF1341BDA1AF800A95C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2FF1351BDA1AF800A95C25 /* Build configuration list for PBXNativeTarget "AQFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2FF1361BDA1AF800A95C25 /* Debug */,
+				9A2FF1371BDA1AF800A95C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2FF1381BDA1AF800A95C25 /* Build configuration list for PBXNativeTarget "AQFoundationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2FF1391BDA1AF800A95C25 /* Debug */,
+				9A2FF13A1BDA1AF800A95C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A2FF1181BDA1AF700A95C25 /* Project object */;
+}
