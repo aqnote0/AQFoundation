@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.version               = "1.0.0"
   s.summary               = "provider foundation api."
   s.description           = "AQNote's Foundation Framework, Provider JSON, Base64, Log etc..."
-  s.homepage              = "https://github.com/imadding/AQFoundation"
+  s.homepage              = "https://github.com/aqnote/AQFoundation"
   s.license               = { :type => 'Copyright', :text => "Apache License" }
   s.author                = { "madding.lip" => "madding.lip@gmail.com" }
-  s.source                = { :git => "https://github.com/imadding/AQFoundation.git", :tag => "v#{s.version}" }
+  s.source                = { :git => "https://github.com/aqnote/AQFoundation.git", :tag => "v#{s.version}" }
   s.requires_arc          = true
   s.ios.deployment_target = '6.0'
 
