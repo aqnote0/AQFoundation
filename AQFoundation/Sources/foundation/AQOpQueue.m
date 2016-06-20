@@ -6,21 +6,21 @@
 //  //  Copyright (c) 2015 aqnote.com. All rights reserved.
 //
 
-#import "AQOpQueue.h"
+#import "AQOperationQueue.h"
 
-@interface AQOpQueue ()
+@interface AQOperationQueue ()
 
 @property(nonatomic, retain) NSMutableDictionary *queues;
 
 @end
 
-@implementation AQOpQueue
+@implementation AQOperationQueue
 
-+ (AQOpQueue *)instance {
-  static AQOpQueue *_factory;
++ (AQOperationQueue *)instance {
+  static AQOperationQueue *_factory;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    _factory = [[AQOpQueue alloc] init];
+    _factory = [[AQOperationQueue alloc] init];
   });
   return _factory;
 }
@@ -36,14 +36,14 @@
 + (NSOperationQueue *)get:(NSString *)queueName maxcount:(int)maxcount {
   @synchronized(self) {
     NSOperationQueue *queue =
-        [[[AQOpQueue instance] queues] objectForKey:queueName];
+        [[[AQOperationQueue instance] queues] objectForKey:queueName];
     if (queue != nil) {
       return queue;
     }
 
     queue = [[NSOperationQueue alloc] init];
     [queue setMaxConcurrentOperationCount:maxcount];
-    [[[AQOpQueue instance] queues] setObject:queue forKey:queueName];
+    [[[AQOperationQueue instance] queues] setObject:queue forKey:queueName];
     return queue;
   }
 }

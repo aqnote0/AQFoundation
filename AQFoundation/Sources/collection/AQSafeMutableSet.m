@@ -25,7 +25,7 @@
   @synchronized(self) {
     if (self.queue == nil) {
       NSString* name =
-          [NSString stringWithFormat:@"com.madding.tsafe.set.%ld",
+          [NSString stringWithFormat:@"com.aqnote.tsafe.set.%ld",
                                      (unsigned long)self.hash];
       _queue = dispatch_queue_create(
           [name cStringUsingEncoding:NSASCIIStringEncoding],

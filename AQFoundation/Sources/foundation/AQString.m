@@ -18,12 +18,10 @@
 }
 
 + (NSString *)fromNSData:(NSData *)data {
-  return
-      [AQString fromNSData:data encoding:NSUTF8StringEncoding];
+  return [AQString fromNSData:data encoding:NSUTF8StringEncoding];
 }
 
-+ (NSString *)fromNSData:(NSData *)data
-                           encoding:(NSStringEncoding)encoding {
++ (NSString *)fromNSData:(NSData *)data encoding:(NSStringEncoding)encoding {
   if (nil == data) {
     return nil;
   }
@@ -124,16 +122,17 @@
 + (BOOL)isBlank:(NSString *)string {
   return nil == string ||
          0 ==
-             [string stringByTrimmingCharactersInSet:
-                         [NSCharacterSet whitespaceCharacterSet]]
+             [string
+                 stringByTrimmingCharactersInSet:[NSCharacterSet
+                                                     whitespaceCharacterSet]]
                  .length;
 }
 
 + (NSArray *)split:(NSString *)string sep:(NSString *)sep {
-  if(string == nil) {
+  if (string == nil) {
     return nil;
   }
-  
+
   return [string componentsSeparatedByString:sep];
 }
 

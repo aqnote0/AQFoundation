@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AQOpQueue : NSObject
+@interface AQOperationQueue : NSObject
 
 /**
  *  返回指定queuenanme的OperationQueue，如果已经存在，直接返回；否则构造一个新的给用户；
- *   建议queueName设置格式如下：com.madding.{scope}.name
+ *   建议queueName设置格式如下：com.aqnote.{scope}.name
  *
  *  @param queueName operationQueue的名字
  *  @param maxcount  queue的最大并发(线程数）

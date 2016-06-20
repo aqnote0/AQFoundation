@@ -2,8 +2,8 @@
 //  AQFoundationTests.m
 //  AQFoundationTests
 //
-//  Created by madding.lip on 10/23/15.
-//  Copyright © 2015 madding. All rights reserved.
+//  Created by madding.lip on 6/20/16.
+//  Copyright © 2016 madding. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

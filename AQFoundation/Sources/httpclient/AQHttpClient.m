@@ -9,9 +9,9 @@
 #import "AQHttpClient.h"
 #import "AQThread.h"
 #import "AQLogger.h"
-#import "AQOpQueue.h"
+#import "AQOperationQueue.h"
 
-#define AQ_HTTP_QUEUE [AQOpQueue get:@"com.madding.http" maxcount:3]
+#define AQ_HTTP_QUEUE [AQOperationQueue get:@"com.aqnote.http" maxcount:3]
 
 @interface AQHttpThread : NSObject {
   dispatch_queue_t _backHttpQueue;
@@ -31,7 +31,7 @@ AQ_DEF_SINGLETON
 - (instancetype)init {
   self = [super init];
   if(self) {
-    _backHttpQueue = dispatch_queue_create("com.madding.queue.ihttp", DISPATCH_QUEUE_SERIAL);
+    _backHttpQueue = dispatch_queue_create("com.aqnote.queue.ihttp", DISPATCH_QUEUE_SERIAL);
   }
   return self;
 }

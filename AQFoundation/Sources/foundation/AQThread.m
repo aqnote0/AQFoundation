@@ -26,9 +26,9 @@ AQ_DEF_SINGLETON
   self = [super init];
   if (self) {
     _foreQueue = dispatch_get_main_queue();
-    _backQueueInitMain = dispatch_queue_create("com.madding.queue.init.main", nil);
-    _backQueueInitSub = dispatch_queue_create("com.madding.queue.init.sub", nil);
-    _backQueueTask = dispatch_queue_create("com.madding.queue.task", nil);
+    _backQueueInitMain = dispatch_queue_create("com.aqnote.queue.init.main", nil);
+    _backQueueInitSub = dispatch_queue_create("com.aqnote.queue.init.sub", nil);
+    _backQueueTask = dispatch_queue_create("com.aqnote.queue.task", nil);
   }
 
   return self;

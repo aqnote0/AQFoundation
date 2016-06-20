@@ -103,7 +103,7 @@ static void reachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
         self.reachabilityRef = ref;
         // We need to create a serial queue.
         // We allocate this once for the lifetime of the notifier.
-        self.reachabilitySerialQueue = dispatch_queue_create("com.madding.ios.reachability", NULL);
+        self.reachabilitySerialQueue = dispatch_queue_create("com.aqnote.ios.reachability", NULL);
     }
     
     return self;    

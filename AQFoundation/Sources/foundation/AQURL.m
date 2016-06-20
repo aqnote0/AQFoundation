@@ -19,6 +19,7 @@
       CFSTR("!*'();:@&=+$,/?%#[]"), kCFStringEncodingUTF8);
   NSString *result = (__bridge NSString *)cstring;
   CFRelease(cstring);
+  
   return result;
 }
 
