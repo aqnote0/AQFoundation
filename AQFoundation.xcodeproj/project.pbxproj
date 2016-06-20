@@ -89,6 +89,8 @@
 		9A2980191D179A9E0054D1AB /* AQFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2980181D179A9E0054D1AB /* AQFoundationTests.m */; };
 		9A29801B1D179A9E0054D1AB /* AQFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A297FBA1D1799E80054D1AB /* AQFoundation.framework */; };
 		9A2980241D179EBC0054D1AB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A2980231D179EBC0054D1AB /* Info.plist */; };
+		9A2981191D17FEF30054D1AB /* Runscript.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A2981181D17FEF30054D1AB /* Runscript.h */; };
+		9A29811B1D17FEF30054D1AB /* Runscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A29811A1D17FEF30054D1AB /* Runscript.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9A2981141D17FEF30054D1AB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				9A2981191D17FEF30054D1AB /* Runscript.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		72CB975379A104EB89C4D231 /* Pods-AQFoundationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQFoundationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AQFoundationTests/Pods-AQFoundationTests.release.xcconfig"; sourceTree = "<group>"; };
 		7E01C9B59602AD599E51CD01 /* Pods-AQFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQFoundation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AQFoundation/Pods-AQFoundation.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +124,11 @@
 		9A2980181D179A9E0054D1AB /* AQFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AQFoundationTests.m; sourceTree = "<group>"; };
 		9A29801A1D179A9E0054D1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A2980231D179EBC0054D1AB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A29810C1D17FEC90054D1AB /* Runscript.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runscript.h; sourceTree = "<group>"; };
+		9A29810E1D17FEC90054D1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2981161D17FEF30054D1AB /* libRunscript.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRunscript.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2981181D17FEF30054D1AB /* Runscript.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runscript.h; sourceTree = "<group>"; };
+		9A29811A1D17FEF30054D1AB /* Runscript.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Runscript.m; sourceTree = "<group>"; };
 		9AAC0EE01D018DD7004CE032 /* AQFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQFileCache.m; sourceTree = "<group>"; };
 		9AAC0EE11D018DD7004CE032 /* AQMemCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQMemCache.m; sourceTree = "<group>"; };
 		9AAC0EE21D018DD7004CE032 /* AQUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQUserDefaults.m; sourceTree = "<group>"; };
@@ -210,6 +230,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A2981131D17FEF30054D1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -242,11 +269,31 @@
 			path = AQFoundationTests;
 			sourceTree = "<group>";
 		};
+		9A29810B1D17FEC90054D1AB /* Runscript */ = {
+			isa = PBXGroup;
+			children = (
+				9A29810C1D17FEC90054D1AB /* Runscript.h */,
+				9A29810E1D17FEC90054D1AB /* Info.plist */,
+			);
+			path = Runscript;
+			sourceTree = "<group>";
+		};
+		9A2981171D17FEF30054D1AB /* Runscript */ = {
+			isa = PBXGroup;
+			children = (
+				9A2981181D17FEF30054D1AB /* Runscript.h */,
+				9A29811A1D17FEF30054D1AB /* Runscript.m */,
+			);
+			path = Runscript;
+			sourceTree = "<group>";
+		};
 		9A2FF1171BDA1AF700A95C25 = {
 			isa = PBXGroup;
 			children = (
 				9AAC0EDB1D018DD7004CE032 /* AQFoundation */,
 				9A2980171D179A9E0054D1AB /* AQFoundationTests */,
+				9A29810B1D17FEC90054D1AB /* Runscript */,
+				9A2981171D17FEF30054D1AB /* Runscript */,
 				9A2FF1221BDA1AF700A95C25 /* Products */,
 				3935BD20D8338AF9BC2AE6A0 /* Pods */,
 				92D710571EBF626B879E45E0 /* Frameworks */,
@@ -258,6 +305,7 @@
 			children = (
 				9A297FBA1D1799E80054D1AB /* AQFoundation.framework */,
 				9A2980161D179A9E0054D1AB /* AQFoundationTests.xctest */,
+				9A2981161D17FEF30054D1AB /* libRunscript.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -600,6 +648,24 @@
 			productReference = 9A2980161D179A9E0054D1AB /* AQFoundationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9A2981151D17FEF30054D1AB /* Runscript */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A29811C1D17FEF30054D1AB /* Build configuration list for PBXNativeTarget "Runscript" */;
+			buildPhases = (
+				9A2981121D17FEF30054D1AB /* Sources */,
+				9A2981131D17FEF30054D1AB /* Frameworks */,
+				9A2981141D17FEF30054D1AB /* CopyFiles */,
+				9A29811F1D17FEFD0054D1AB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runscript;
+			productName = Runscript;
+			productReference = 9A2981161D17FEF30054D1AB /* libRunscript.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -617,6 +683,10 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = WE5AVK72GR;
 					};
+					9A2981151D17FEF30054D1AB = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SPJA6W74V3;
+					};
 				};
 			};
 			buildConfigurationList = 9A2FF11B1BDA1AF700A95C25 /* Build configuration list for PBXProject "AQFoundation" */;
@@ -633,6 +703,7 @@
 			targets = (
 				9A297FB91D1799E80054D1AB /* AQFoundation */,
 				9A2980151D179A9E0054D1AB /* AQFoundationTests */,
+				9A2981151D17FEF30054D1AB /* Runscript */,
 			);
 		};
 /* End PBXProject section */
@@ -654,6 +725,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A29811F1D17FEFD0054D1AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh shell/build_4_arch.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A297FB51D1799E80054D1AB /* Sources */ = {
@@ -705,6 +792,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A2980191D179A9E0054D1AB /* AQFoundationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2981121D17FEF30054D1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A29811B1D17FEF30054D1AB /* Runscript.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,6 +867,26 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aqnote.AQFoundationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9A29811D1D17FEF30054D1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9A29811E1D17FEF30054D1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -874,12 +989,22 @@
 				9A297FC11D1799E80054D1AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A29801E1D179A9E0054D1AB /* Build configuration list for PBXNativeTarget "AQFoundationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A29801F1D179A9E0054D1AB /* Debug */,
 				9A2980201D179A9E0054D1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A29811C1D17FEF30054D1AB /* Build configuration list for PBXNativeTarget "Runscript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A29811D1D17FEF30054D1AB /* Debug */,
+				9A29811E1D17FEF30054D1AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
