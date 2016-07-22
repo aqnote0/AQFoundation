@@ -39,11 +39,7 @@ AQ_DEF_SINGLETON
 }
 
 - (void)foreground:(dispatch_block_t)block {
-  if ([[NSThread currentThread] isMainThread]) {
-    block();
-  } else {
-    dispatch_async(_foreQueue, block);
-  }
+  dispatch_async(_foreQueue, block);
 }
 
 + (void)backgroundMain:(dispatch_block_t)block {
