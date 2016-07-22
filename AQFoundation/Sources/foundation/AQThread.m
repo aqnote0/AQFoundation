@@ -26,8 +26,8 @@ AQ_DEF_SINGLETON
   self = [super init];
   if (self) {
     _foreQueue = dispatch_get_main_queue();
-    _backQueueInitMain = dispatch_queue_create("com.aqnote.queue.init.main", nil);
-    _backQueueInitSub = dispatch_queue_create("com.aqnote.queue.init.sub", nil);
+    _backQueueInitMain = dispatch_queue_create("com.aqnote.queue.main", nil);
+    _backQueueInitSub = dispatch_queue_create("com.aqnote.queue.sub", nil);
     _backQueueTask = dispatch_queue_create("com.aqnote.queue.task", nil);
   }
 
@@ -39,22 +39,26 @@ AQ_DEF_SINGLETON
 }
 
 - (void)foreground:(dispatch_block_t)block {
-  dispatch_async(_foreQueue, block);
+  if ([[NSThread currentThread] isMainThread]) {
+    block();
+  } else {
+    dispatch_async(_foreQueue, block);
+  }
 }
 
-+ (void)backgroundInitMain:(dispatch_block_t)block {
-  return [[AQThread sharedInstance] backgroundInitMain:block];
++ (void)backgroundMain:(dispatch_block_t)block {
+  return [[AQThread sharedInstance] backgroundMain:block];
 }
 
-- (void)backgroundInitMain:(dispatch_block_t)block {
+- (void)backgroundMain:(dispatch_block_t)block {
   dispatch_async(_backQueueInitMain, block);
 }
 
-+ (void)backgroundInitSub:(dispatch_block_t)block {
-  return [[AQThread sharedInstance] backgroundInitSub:block];
++ (void)backgroundSub:(dispatch_block_t)block {
+  return [[AQThread sharedInstance] backgroundSub:block];
 }
 
-- (void)backgroundInitSub:(dispatch_block_t)block {
+- (void)backgroundSub:(dispatch_block_t)block {
   dispatch_async(_backQueueInitSub, block);
 }
 
@@ -67,23 +71,14 @@ AQ_DEF_SINGLETON
 }
 
 + (void)backgroundTaskWithDelay:(dispatch_time_t)ms
-                             block:(dispatch_block_t)block {
+                          block:(dispatch_block_t)block {
   [[AQThread sharedInstance] backgroundTaskWithDelay:ms block:block];
 }
 
 - (void)backgroundTaskWithDelay:(dispatch_time_t)ms
-                             block:(dispatch_block_t)block {
+                          block:(dispatch_block_t)block {
   dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, ms * USEC_PER_SEC);
   dispatch_after(time, _backQueueTask, block);
 }
-
-
-
-
-
-
-
-
-
 
 @end

@@ -24,9 +24,9 @@
 
 + (void)foreground:(dispatch_block_t)block;
 
-+ (void)backgroundInitMain:(dispatch_block_t)block;
++ (void)backgroundMain:(dispatch_block_t)block;
 
-+ (void)backgroundInitSub:(dispatch_block_t)block;
++ (void)backgroundSub:(dispatch_block_t)block;
 
 + (void)backgroundTask:(dispatch_block_t)block;
 
