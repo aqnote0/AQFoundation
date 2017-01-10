@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17CFA24C7C6EE69FEAAFD692 /* libPods-AQFoundationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4205F9C7C0B71536FB0A3AB /* libPods-AQFoundationTests.a */; };
+		2BD6197ACD60E205F17D4866 /* libPods-AQFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E01EB0415D0A58A927633E03 /* libPods-AQFoundation.a */; };
 		9A235C191D2A327B00CEF560 /* LockMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A235C181D2A327B00CEF560 /* LockMain.m */; };
 		9A235C1A1D2A3DD300CEF560 /* AQFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A297FBA1D1799E80054D1AB /* AQFoundation.framework */; };
 		9A297FC21D179A1F0054D1AB /* AQFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0EE01D018DD7004CE032 /* AQFileCache.m */; };
@@ -224,6 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BD6197ACD60E205F17D4866 /* libPods-AQFoundation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A235C1A1D2A3DD300CEF560 /* AQFoundation.framework in Frameworks */,
+				17CFA24C7C6EE69FEAAFD692 /* libPods-AQFoundationTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,10 +628,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A297FBF1D1799E80054D1AB /* Build configuration list for PBXNativeTarget "AQFoundation" */;
 			buildPhases = (
+				79C2DEB758D5E7847FF98CCF /* [CP] Check Pods Manifest.lock */,
 				9A297FB51D1799E80054D1AB /* Sources */,
 				9A297FB61D1799E80054D1AB /* Frameworks */,
 				9A297FB71D1799E80054D1AB /* Headers */,
 				9A297FB81D1799E80054D1AB /* Resources */,
+				A8DAC1067F4DC7386598F7EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -642,9 +648,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A29801E1D179A9E0054D1AB /* Build configuration list for PBXNativeTarget "AQFoundationTests" */;
 			buildPhases = (
+				1DA720ED9534A6808C26B266 /* [CP] Check Pods Manifest.lock */,
 				9A2980121D179A9E0054D1AB /* Sources */,
 				9A2980131D179A9E0054D1AB /* Frameworks */,
 				9A2980141D179A9E0054D1AB /* Resources */,
+				FAFA5E4B2534972980151EFC /* [CP] Embed Pods Frameworks */,
+				566C89FA5C1069680039C554 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -680,7 +689,7 @@
 		9A2FF1181BDA1AF700A95C25 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = madding;
 				TargetAttributes = {
 					9A297FB91D1799E80054D1AB = {
@@ -735,6 +744,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1DA720ED9534A6808C26B266 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		566C89FA5C1069680039C554 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AQFoundationTests/Pods-AQFoundationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79C2DEB758D5E7847FF98CCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		9A29811F1D17FEFD0054D1AB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -747,6 +801,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "sh shell/build_4_arch.sh";
+		};
+		A8DAC1067F4DC7386598F7EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AQFoundation/Pods-AQFoundation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAFA5E4B2534972980151EFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AQFoundationTests/Pods-AQFoundationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -826,9 +910,11 @@
 /* Begin XCBuildConfiguration section */
 		9A297FC01D1799E80054D1AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E01C9B59602AD599E51CD01 /* Pods-AQFoundation.debug.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -846,9 +932,11 @@
 		};
 		9A297FC11D1799E80054D1AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6239157CAA9B728F2A05F03 /* Pods-AQFoundation.release.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -866,6 +954,7 @@
 		};
 		9A29801F1D179A9E0054D1AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD8245B3C7AAC8F7C990EDEC /* Pods-AQFoundationTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				INFOPLIST_FILE = AQFoundationTests/Info.plist;
@@ -877,6 +966,7 @@
 		};
 		9A2980201D179A9E0054D1AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72CB975379A104EB89C4D231 /* Pods-AQFoundationTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				INFOPLIST_FILE = AQFoundationTests/Info.plist;
@@ -919,8 +1009,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -966,8 +1058,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
