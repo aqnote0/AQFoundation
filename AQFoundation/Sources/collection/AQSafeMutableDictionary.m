@@ -240,7 +240,8 @@
 
 - (void)runAsynchronousWriteBlock:(void (^)(NSMutableDictionary *))block {
   [self createQueue];
-  __weak __typeof(self) weakSelf = self;
+//  __weak __typeof(self) weakSelf = self;
+  __unsafe_unretained __typeof(self) weakSelf = self;
   dispatch_barrier_async(self.queue, ^{
     block &&weakSelf.backingStore ? block(weakSelf.backingStore) : nil;
   });
@@ -248,7 +249,8 @@
 
 - (void)runSynchronousReadBlock:(void (^)(NSMutableDictionary *))block {
   [self createQueue];
-  __weak __typeof(self) weakSelf = self;
+//  __weak __typeof(self) weakSelf = self;
+  __unsafe_unretained __typeof(self) weakSelf = self;
   dispatch_sync(self.queue, ^{
     block &&weakSelf.backingStore ? block(weakSelf.backingStore) : nil;
   });
