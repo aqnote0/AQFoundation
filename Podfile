@@ -3,7 +3,7 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
  #
-source "https://github.com/aqnote/specs.git"
+source "https://github.com/aqnotecom/specs.git"
 
 target 'AQFoundation' do
 
