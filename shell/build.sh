@@ -2,7 +2,7 @@
 
 export FRAMEWORK_NAME="AQFoundation"
 
-xcodebuild -scheme Runscript -sdk iphoneos -workspace $FRAMEWORK_NAME.xcworkspace -configuration Release clean build
+xcodebuild -scheme _build -sdk iphoneos -workspace $FRAMEWORK_NAME.xcworkspace -configuration Release clean build
 sleep 3
 
 echo "before trip, the flag list: "

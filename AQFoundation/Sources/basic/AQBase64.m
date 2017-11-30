@@ -21,15 +21,14 @@ void *decodeBase64(const char *inputBuffer, size_t length, size_t *outputLength,
 
 + (NSString *)encodeStandardBase64ForData:(NSData *)iData {
   return [AQBase64 encodeBase64ForData:iData
-                                    charList:kAQStdBase64Chars
-                                        ch65:'='];
+                              charList:kAQStdBase64Chars
+                                  ch65:'='];
 }
 
 + (NSData *)decodeStandardBase64String:(NSString *)string {
   NSData *data = [string dataUsingEncoding:NSASCIIStringEncoding];
   size_t outputLength;
-  void *outputBuffer =
-      decodeBase64([data bytes], [data length], &outputLength, '+', '/');
+  void *outputBuffer = decodeBase64([data bytes], [data length], &outputLength, '+', '/');
   NSData *result = [NSData dataWithBytes:outputBuffer length:outputLength];
   free(outputBuffer);
   return result;
@@ -37,15 +36,14 @@ void *decodeBase64(const char *inputBuffer, size_t length, size_t *outputLength,
 
 + (NSString *)encodeUrlSafeBase64ForData:(NSData *)iData {
   return [AQBase64 encodeBase64ForData:iData
-                                    charList:kAQUrlSafeBase64Chars
-                                        ch65:' '];
+                              charList:kAQUrlSafeBase64Chars
+                                  ch65:' '];
 }
 
 + (NSData *)decodeUrlSafeBase64String:(NSString *)string {
   NSData *data = [string dataUsingEncoding:NSASCIIStringEncoding];
   size_t outputLength;
-  void *outputBuffer =
-      decodeBase64([data bytes], [data length], &outputLength, '-', '_');
+  void *outputBuffer = decodeBase64([data bytes], [data length], &outputLength, '-', '_');
   NSData *result = [NSData dataWithBytes:outputBuffer length:outputLength];
   free(outputBuffer);
   return result;
@@ -57,9 +55,7 @@ void *decodeBase64(const char *inputBuffer, size_t length, size_t *outputLength,
                          charList:(const char *)charList
                              ch65:(char)ch65 {
   NSInteger iLen = [iData length];
-
   NSMutableData *oData = [NSMutableData dataWithLength:((iLen + 2) / 3) * 4];
-
   uint8_t *input = (uint8_t *)[iData bytes];
   uint8_t *output = (uint8_t *)oData.mutableBytes;
 
@@ -82,10 +78,8 @@ void *decodeBase64(const char *inputBuffer, size_t length, size_t *outputLength,
     output[index + 3] = (i + 2) < iLen ? charList[(value >> 0) & 0x3F] : ch65;
   }
 
-  NSString *result =
-      [[NSString alloc] initWithData:oData encoding:NSASCIIStringEncoding];
-  return [result
-      stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+  NSString *result = [[NSString alloc] initWithData:oData encoding:NSASCIIStringEncoding];
+  return [result stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
 
 @end

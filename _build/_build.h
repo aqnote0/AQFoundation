@@ -1,13 +1,13 @@
 //
-//  Runscript.m
+//  Runscript.h
 //  Runscript
 //
 //  Created by madding.lip on 6/20/16.
 //  Copyright © 2016 madding. All rights reserved.
 //
 
-#import "Runscript.h"
+#import <Foundation/Foundation.h>
 
-@implementation Runscript
+@interface _build : NSObject
 
 @end
